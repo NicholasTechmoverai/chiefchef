@@ -1,0 +1,166 @@
+.animation-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  /*border: 1px solid #EEEEEE;*/
+  width: 80px;
+}
+
+.cpointer {
+  cursor: pointer;
+}
+
+.width40 {
+  width: 100%;
+  max-width: 24px;
+}
+
+.width32 {
+  width: 100%;
+  max-width: 32px;
+}
+
+
+._3-col-products {
+  position: relative;
+  border-radius: 8px;
+  padding-top: 5px;
+  background-color: #FAFAFA;
+
+  transition: 0.3s;
+}
+
+._3-col-products:hover {
+  box-shadow: 0 8px 14px rgba(33, 33, 33, .1);
+  background-color: #fff;
+}
+
+.show-on-hover {
+  display: inline-block;
+  visibility: hidden;
+  opacity: 0;
+
+  transition: 0.3s;
+}
+
+._3-col-products:hover .show-on-hover {
+  visibility: visible;
+  opacity: 1;
+}
+
+.btn-download {
+  position: absolute;
+  left: auto;
+  top: auto;
+  right: 7px;
+  bottom: -15px;
+
+  color: #fff;
+  font-size: 13px;
+  line-height: 17px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border-radius: 19px;
+  background-color: #1991eb;
+  box-shadow: 0 8px 14px rgba(33, 33, 33, .1);
+}
+
+.show-icon-on-hover {
+  visibility: hidden;
+  opacity: 0;
+
+  position: absolute;
+  max-width: 20px;
+  transform: rotate(10deg);
+  left: 54px;
+  top: 12px;
+  right: auto;
+  bottom: auto;
+
+  transition: 0.3s;
+}
+
+._3-col-products:hover .show-icon-on-hover {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+/* Banner */
+.wrapper {
+  display: flex;
+  flex-flow: center;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.banner {
+  padding-top: 5px;
+  padding-bottom: 4px;
+  background-color: #F6BF2E;
+  color: white;
+}
+
+/* Promo Banner */
+
+.box-panel {
+  width: 100%;
+}
+
+@media (min-width: 991px) {
+  .box-panel {
+    width: 50%;
+  }
+}
+
+.promo-banner {
+  position: relative;
+  width: 100%;
+  padding: 20px 10px 10px 20px;
+  border-radius: 10px;
+  overflow: hidden;
+
+  background: linear-gradient(180deg, #7385E6 0%, #AB9FF6 100%);
+  
+  font-family: Roboto;
+  font-size: 19px;
+  font-weight: 300;
+  line-height: 30px;
+  color: white;
+  text-align: left;
+
+  box-shadow: 0px 4px 14px 0px #666BDE66;
+}
+
+@media (max-width: 375px) {
+  .promo-banner {
+    text-align: center;
+  }
+}
+
+.promo-banner-img {
+  width: 200px;
+  position: absolute;
+  top: 5px;
+  right: -50px;
+  left: auto;
+}
+
+@media (max-width: 375px) {
+  .promo-banner-img {
+    opacity: 0.25;
+  }
+}
+
+.promo-buttons {
+  position: relative;
+  margin-top: 20px;
+}
+
+.promo-banner-link {
+  color: white;
+  text-decoration: underline;
+  display: inline-block;
+}

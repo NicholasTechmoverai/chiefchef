@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChiefChef</title>
+    <link rel="stylesheet" href="../static/css/chef-splash.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.6/lottie.min.js"></script>
+</head>
+<body>
+    <div id="chiefchef-splash">
+        <div class="chiefchef-name">
+            <h1>ChiefChef</h1>
+            <p>Elevate your dining experience</p>
+        </div>
+        <img src="../static/files/chef-1.png" alt="" srcset="">
+        <div id="spinner">
+            <ion-icon name="refresh-circle-outline"></ion-icon>
+        </div>
+    </div>
+    <div id="chiefchef-tutorial">
+        <div id="describer-hold">
+            <div class="tutorial-step">
+                <ion-icon name="star-outline"></ion-icon>
+                <h3>Choose your dish</h3>
+                <p>Pick a dish from our menu</p>
+            </div>
+    
+            <div class="tutorial-step active-tutorial">
+                <ion-icon name="person-circle-outline"></ion-icon>
+                <h3>Fill your order</h3>
+                <p>Enter your order details</p>
+            </div>
+    
+            <div class="tutorial-step">
+                <ion-icon name="card-outline"></ion-icon>
+                <h3>Pay securely</h3>
+                <p>Pay with your credit or debit card</p>
+            </div>
+        </div>
+        <div id="tutorial-desc">
+            <p>Our chef's creations are now available for everyone to try,<br>
+            Find the best recipe that The world can provide...</p>
+        </div>
+        <button id="next-tutorial">Next <ion-icon name="arrow-forward-outline"></ion-icon></button>
+    </div>
+    <div id="chiefchef-login">
+        <img src="../static/files/chef-1.png" alt="" srcset="">
+        <div class="chiefchef-name">
+            <h1>ChiefChef</h1>
+            <p>Elevate your dining experience</p>
+        </div>
+        <div id="login-container">
+            <form id="login-form">
+                <div class="inline"><ion-icon name="mail"></ion-icon> <input type="email" id="useremail" placeholder="chiefchef@gmail.com"></div>
+                <div class="inline"><ion-icon name="lock-closed"></ion-icon><input type="password" id="password" placeholder="xxxxxxx"></div>
+                <div id="remember-me">
+                    <input type="checkbox" id="remember-me-checkbox">
+                    <label for="remember-me-checkbox">Remember me?</label>
+                    <a href="#">CyptPass?</a>
+                </div>
+                <button type="button" id="btn-login">Login</button>
+            </form>
+            <button type="button" id="btn-register">Register</button>
+            <div class="line-with-text">
+                <hr>
+                <span>or sign up with</span>
+                <hr>
+            </div>
+            <div class="social-media-icons">
+                <div class="facebook"><ion-icon name="logo-facebook"></ion-icon></div>
+                <div class="google"><ion-icon name="logo-google"></ion-icon></div>
+                <div class="instagram"><ion-icon name="logo-instagram"></ion-icon></div>
+                <div class="twitter"><ion-icon name="logo-twitter"></ion-icon></div>
+            </div>
+        </div>
+    </div>
+    <div id="chiefchef-homepage">
+        <div id="chiefchef-homepage-header">
+            <div id="chiefchef-homepage-header-inn">
+                <p>
+                    Hi <span class="userlogged-name"> Shahdi</span>! <br>What are cooking today?
+                </p>
+                <button id="notifications-btn">
+                    <ion-icon name="notifications-outline"></ion-icon>
+                    <span class="notification-count">3</span>
+                </button>
+            </div>
+            <div id="chiefchef-homepage-search">
+                <ion-icon name="search-outline"></ion-icon>
+                <input type="text" id="search-input" placeholder="Search for dishes">
+            </div>
+        </div>
+        <div id="popular-category">
+            <h2>Popular Category</h2>
+            <div id="popular-meal">
+                <div class="mealnames">pizza</div>
+                <div class="mealnames">Burger</div>
+                <div class="mealnames">Chicken</div>
+                <div class="mealnames">pasta</div>
+                <div class="mealnames">Smocha</div>
+                <div class="mealnames">Chapati</div>
+                <div class="mealnames">Ugali</div>
+            </div>
+        </div>
+        <div id="popular-meals-cards-hold">
+            <div class="popular-meal-card">
+                <button class="like-meal"><ion-icon name="heart-outline"></ion-icon></button>
+                <img src="../static/files/pizza-1.jpeg" alt="pizza">
+                <div class="user-inter">
+                    <div class="meal-name"><ion-icon name="star-outline"></ion-icon><span>5</span></div>
+                    <div class="meal-cook-time"><ion-icon name="alarm-outline"></ion-icon><span >20min</span></div>
+                </div>
+            </div>
+            <div class="popular-meal-card">
+                <button  class="like-meal"><ion-icon name="heart-outline"></ion-icon></button>
+                <img src="../static/files/burger.jpeg" alt="pizza">
+                <div class="user-inter">
+                    <div class="meal-name"><ion-icon name="star-outline"></ion-icon><span>5</span></div>
+                    <div class="meal-cook-time"><ion-icon name="alarm-outline"></ion-icon><span >20min</span></div>
+                </div>
+                </div>
+            <div class="popular-meal-card">
+                <button  class="like-meal"><ion-icon name="heart-outline"></ion-icon></button>
+                <img src="../static/files/chicken.jpg" alt="pizza">
+                <div class="user-inter">
+                    <div class="meal-name"><ion-icon name="star-outline"></ion-icon><span>5</span></div>
+                    <div class="meal-cook-time"><ion-icon name="alarm-outline"></ion-icon><span >20min</span></div>
+                </div>
+            </div>
+            <div class="popular-meal-card">
+                <button  class="like-meal"><ion-icon name="heart-outline"></ion-icon></button>
+                <img src="../static/files/chapati.jpeg" alt="pizza">
+                <div class="user-inter">
+                    <div class="meal-name"><ion-icon name="star-outline"></ion-icon><span>5</span></div>
+                    <div class="meal-cook-time"><ion-icon name="alarm-outline"></ion-icon><span >20min</span></div>
+                </div>
+            </div>
+            <div class="popular-meal-card">
+                <button  class="like-meal"><ion-icon name="heart-outline"></ion-icon></button>
+                <img src="../static/files/ugali.jpg" alt="pizza">
+                <div class="user-inter">
+                    <div class="meal-name"><ion-icon name="star-outline"></ion-icon><span>5</span></div>
+                    <div class="meal-cook-time"><ion-icon name="alarm-outline"></ion-icon><span >20min</span></div>
+                </div>
+            </div>
+
+        </div>
+        <h2>Trending Recipes</h2>
+        <div id="trending-recipes">
+            <div class="trending-recipe-card">
+                <button class="like-meal"><ion-icon name="heart-outline"></ion-icon></button>
+                <img src="../static/files/pasta.jpeg" alt="">
+                <div class="recipe-info">
+                    <div class="recipe-desc">
+                        <h3>Ugali Biryani</h3>
+                        <p>Lorem ipsum dolor sit amet, justo eros ultrices neque, at tristique diam velit vel velit.</p>
+                    </div>
+                    <div class="recipe-inter">
+                        <div class="recipe-poster">By: <span>Nicholas</span></div>
+                        <div class="meal-name"><ion-icon name="star-outline"></ion-icon><span>5</span></div>
+                        <div class="meal-cook-time"><ion-icon name="alarm-outline"></ion-icon><span >20</span> min</div>
+                    </div>
+                </div>
+            </div>
+            <div class="trending-recipe-card">
+                <button class="like-meal"><ion-icon name="heart-outline"></ion-icon></button>
+                <img src="../static/files/chapati.jpeg" alt="">
+                <div class="recipe-info">
+                    <div class="recipe-desc">
+                        <h3>Ugali Biryani</h3>
+                        <p>Lorem ipsum dolor sit amet, justo eros ultrices neque, at tristique diam velit vel velit.</p>
+                    </div>
+                    <div class="recipe-inter">
+                        <div class="recipe-poster">By: <span>Nicholas</span></div>
+                        <div class="meal-name"><ion-icon name="star-outline"></ion-icon><span>5</span></div>
+                        <div class="meal-cook-time"><ion-icon name="alarm-outline"></ion-icon><span >20</span> min</div>
+                    </div>
+                </div>
+            </div>
+            <div class="trending-recipe-card">
+                <button class="like-meal"><ion-icon name="heart-outline"></ion-icon></button>
+                <img src="../static/files/pizza-1.jpeg" alt="">
+                <div class="recipe-info">
+                    <div class="recipe-desc">
+                        <h3>Ugali Biryani</h3>
+                        <p>Lorem ipsum dolor sit amet, justo eros ultrices neque, at tristique diam velit vel velit.</p>
+                    </div>
+                    <div class="recipe-inter">
+                        <div class="recipe-poster">By: <span>Nicholas</span></div>
+                        <div class="meal-name"><ion-icon name="star-outline"></ion-icon><span>5</span></div>
+                        <div class="meal-cook-time"><ion-icon name="alarm-outline"></ion-icon><span >20</span> min</div>
+                    </div>
+                </div>
+            </div>
+            <div class="trending-recipe-card">
+                <button class="like-meal"><ion-icon name="heart-outline"></ion-icon></button>
+                <img src="../static/files/smocha.jpeg" alt="">
+                <div class="recipe-info">
+                    <div class="recipe-desc">
+                        <h3>Ugali Biryani</h3>
+                        <p>Lorem ipsum dolor sit amet, justo eros ultrices neque, at tristique diam velit vel velit.</p>
+                    </div>
+                    <div class="recipe-inter">
+                        <div class="recipe-poster">By: <span>Nicholas</span></div>
+                        <div class="meal-name"><ion-icon name="star-outline"></ion-icon><span>5</span></div>
+                        <div class="meal-cook-time"><ion-icon name="alarm-outline"></ion-icon><span >20</span> min</div>
+                    </div>
+                </div>
+            </div>
+            <div class="trending-recipe-card">
+                <button class="like-meal"><ion-icon name="heart-outline"></ion-icon></button>
+                <img src="../static/files/chicken.jpg" alt="">
+                <div class="recipe-info">
+                    <div class="recipe-desc">
+                        <h3>Ugali Biryani</h3>
+                        <p>Lorem ipsum dolor sit amet, justo eros ultrices neque, at tristique diam velit vel velit.</p>
+                    </div>
+                    <div class="recipe-inter">
+                        <div class="recipe-poster">By: <span>Nicholas</span></div>
+                        <div class="meal-name"><ion-icon name="star-outline"></ion-icon><span>5</span></div>
+                        <div class="meal-cook-time"><ion-icon name="alarm-outline"></ion-icon><span >20</span> min</div>
+                    </div>
+                </div>
+            </div>
+            <div class="trending-recipe-card">
+                <button class="like-meal"><ion-icon name="heart-outline"></ion-icon></button>
+                <img src="../static/files/ugali.jpg" alt="">
+                <div class="recipe-info">
+                    <div class="recipe-desc">
+                        <h3>Ugali Biryani</h3>
+                        <p>Lorem ipsum dolor sit amet, justo eros ultrices neque, at tristique diam velit vel velit.</p>
+                    </div>
+                    <div class="recipe-inter">
+                        <div class="recipe-poster">By: <span>Nicholas</span></div>
+                        <div class="meal-name"><ion-icon name="star-outline"></ion-icon><span>5</span></div>
+                        <div class="meal-cook-time"><ion-icon name="alarm-outline"></ion-icon><span >20</span> min</div>
+                    </div>
+                </div>
+            </div>
+            <div class="trending-recipe-card">
+                <button class="like-meal"><ion-icon name="heart-outline"></ion-icon></button>
+                <img src="../static/files/burger.jpeg" alt="">
+                <div class="recipe-info">
+                    <div class="recipe-desc">
+                        <h3>Ugali Biryani</h3>
+                        <p>Lorem ipsum dolor sit amet, justo eros ultrices neque, at tristique diam velit vel velit.</p>
+                    </div>
+                    <div class="recipe-inter">
+                        <div class="recipe-poster">By: <span>Nicholas</span></div>
+                        <div class="meal-rate"><ion-icon name="star-outline"></ion-icon><span>5</span></div>
+                        <div class="meal-cook-time"><ion-icon name="alarm-outline"></ion-icon><span >20</span> min</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="chiefchef-homepage-navigation">
+            <div id="chiefchef-homepage-navigation-inner">
+                <div class="navigation-item btn-add-recipe" id="btn-add-recipe" onclick="changetabs('chiefchef-add-recipe', 0);"><ion-icon name="add-outline"></ion-icon></div>
+                <div class="navigation-item btn-gohome" onclick="changetabs('chiefchef-homepage', 1);"><ion-icon name="home"></ion-icon>Home</div>
+                <div class="navigation-item btn-gofav" onclick="changetabs('chiefchef-fav', 2);"><ion-icon name="heart"></ion-icon>Fav</div>
+                <div class="navigation-item btn-goreel" onclick="changetabs('chiefchef-reel', 3);"><ion-icon name="play-circle"></ion-icon>Reel</div>
+                <div class="navigation-item btn-goprofile" onclick="changetabs('chiefchef-profile', 4);"><ion-icon name="person"></ion-icon>Profile</div>
+            </div>
+        </div>
+        
+    </div>
+    
+    <div id="chiefchef-fav">
+        <div id="chiefchef-fav-header">
+            <h2>Favorite Recipes</h2>   
+        </div>
+        <div id="chiefchef-fav-holder">
+                <div class="popular-meal-card">
+                    <button class="like-meal"><ion-icon name="heart-outline"></ion-icon></button>
+                    <img src="../static/files/pizza-1.jpeg" alt="pizza">
+                    <div class="user-inter">
+                        <div class="meal-name"><ion-icon name="star-outline"></ion-icon><span>5</span></div>
+                        <div class="meal-cook-time"><ion-icon name="alarm-outline"></ion-icon><span >20min</span></div>
+                    </div>
+                </div>
+                <div class="popular-meal-card">
+                    <button  class="like-meal"><ion-icon name="heart-outline"></ion-icon></button>
+                    <img src="../static/files/burger.jpeg" alt="pizza">
+                    <div class="user-inter">
+                        <div class="meal-name"><ion-icon name="star-outline"></ion-icon><span>5</span></div>
+                        <div class="meal-cook-time"><ion-icon name="alarm-outline"></ion-icon><span >20min</span></div>
+                    </div>
+                    </div>
+                <div class="popular-meal-card">
+                    <button  class="like-meal"><ion-icon name="heart-outline"></ion-icon></button>
+                    <img src="../static/files/chicken.jpg" alt="pizza">
+                    <div class="user-inter">
+                        <div class="meal-name"><ion-icon name="star-outline"></ion-icon><span>5</span></div>
+                        <div class="meal-cook-time"><ion-icon name="alarm-outline"></ion-icon><span >20min</span></div>
+                    </div>
+                </div>
+                <div class="popular-meal-card">
+                    <button  class="like-meal"><ion-icon name="heart-outline"></ion-icon></button>
+                    <img src="../static/files/chapati.jpeg" alt="pizza">
+                    <div class="user-inter">
+                        <div class="meal-name"><ion-icon name="star-outline"></ion-icon><span>5</span></div>
+                        <div class="meal-cook-time"><ion-icon name="alarm-outline"></ion-icon><span >20min</span></div>
+                    </div>
+                </div>
+                <div class="popular-meal-card">
+                    <button  class="like-meal"><ion-icon name="heart-outline"></ion-icon></button>
+                    <img src="../static/files/ugali.jpg" alt="pizza">
+                    <div class="user-inter">
+                        <div class="meal-name"><ion-icon name="star-outline"></ion-icon><span>5</span></div>
+                        <div class="meal-cook-time"><ion-icon name="alarm-outline"></ion-icon><span >20min</span></div>
+                    </div>
+                </div>
+        </div>
+
+        <div id="chiefchef-homepage-navigation">
+            <div id="chiefchef-homepage-navigation-inner">
+                <div class="navigation-item btn-add-recipe" id="btn-add-recipe" onclick="changetabs('chiefchef-add-recipe', 0);"><ion-icon name="add-outline"></ion-icon></div>
+                <div class="navigation-item btn-gohome" onclick="changetabs('chiefchef-homepage', 1);"><ion-icon name="home"></ion-icon>Home</div>
+                <div class="navigation-item btn-gofav" onclick="changetabs('chiefchef-fav', 2);"><ion-icon name="heart"></ion-icon>Fav</div>
+                <div class="navigation-item btn-goreel" onclick="changetabs('chiefchef-reel', 3);"><ion-icon name="play-circle"></ion-icon>Reel</div>
+                <div class="navigation-item btn-goprofile" onclick="changetabs('chiefchef-profile', 4);"><ion-icon name="person"></ion-icon>Profile</div>
+            </div>
+        </div>
+        
+    </div>
+    <div id="chiefchef-reel">
+        <div id="chiefchef-homepage-navigation">
+            <div id="reels-hold-container">
+                <div class="recipe-reels">
+                    <video id="video1" src="../static/files/istockphoto-1321107952-640_adpp_is.mp4"></video>
+                    <div class="video-controls">
+                        <span id="timer1" class="timer">00:00 / 00:00</span>
+                        <span id="status1" class="status">Paused</span>
+                    </div>
+                </div>
+                <div class="recipe-reels">
+                    <video id="video2" src="../static/files/istockphoto-180617222-640_adpp_is.mp4"></video>
+                    <div class="video-controls">
+                        <span id="timer2" class="timer">00:00 / 00:00</span>
+                        <span id="status2" class="status">Paused</span>
+                    </div>
+                </div>
+                <div class="recipe-reels">
+                    <video id="video3" src="../static/files/istockphoto-606045006-640_adpp_is.mp4"></video>
+                    <div class="video-controls">
+                        <span id="timer3" class="timer">00:00 / 00:00</span>
+                        <span id="status3" class="status">Paused</span>
+                    </div>
+                </div>
+                <div class="recipe-reels">
+                    <video id="video4" src="../static/files/pizza short.mp4"></video>
+                    <div class="video-controls">
+                        <span id="timer4" class="timer">00:00 / 00:00</span>
+                        <span id="status4" class="status">Paused</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="chiefchef-homepage-navigation-inner">
+                <div class="navigation-item btn-add-recipe" id="btn-add-recipe" onclick="changetabs('chiefchef-add-recipe', 0);"><ion-icon name="add-outline"></ion-icon></div>
+                <div class="navigation-item btn-gohome" onclick="changetabs('chiefchef-homepage', 1);"><ion-icon name="home"></ion-icon>Home</div>
+                <div class="navigation-item btn-gofav" onclick="changetabs('chiefchef-fav', 2);"><ion-icon name="heart"></ion-icon>Fav</div>
+                <div class="navigation-item btn-goreel" onclick="changetabs('chiefchef-reel', 3);"><ion-icon name="play-circle"></ion-icon>Reel</div>
+                <div class="navigation-item btn-goprofile" onclick="changetabs('chiefchef-profile', 4);"><ion-icon name="person"></ion-icon>Profile</div>
+            </div>
+        </div>
+
+    </div>
+    <div id="chiefchef-profile">
+        <div id="chiefchef-profile-header">
+            <h2>Profile</h2>
+            <button id="edit-profile-btn"><ion-icon name="settings-outline"></ion-icon></button>
+        </div>
+        <div id="chiefchef-profile-info">
+            <div class="user-details">
+                <img src="../static/files/chef2.jpg" alt="user">
+                <h3 id="username">Nicholas</h3>
+                <p id="userTitle">British chef</p>
+            </div>
+            <div class="user-info">
+               <p>Recipe</p>
+               <p id="recipe-no">4</p>
+            </div>
+            <div class="user-info">
+                <p>Followers</p>
+                <p id="recipe-no">2k</p>
+             </div>
+             <div class="user-info">
+                <p>Following</p>
+                <p id="recipe-no">259</p>
+             </div>
+        </div>
+        <div id="user-desc-about">   
+            <div id="aboutme-content">
+                <p>Gee, the Chef
+                    As a chef, Gee brings passion, creativity, and a love for culinary arts to every dish. With a keen eye for detail and a deep understanding of ingredients, Gee masterfully blends flavors to create dishes that are both visually stunning and irresistibly delicious. Whether it’s crafting traditional recipes with a modern twist or experimenting with new techniques, Gee's kitchen is a place of innovation and precision.</p>
+                <a href="">#myinfo</a>
+                <a href="">#mywork</a>
+                <a href="">#myblog</a>
+            </div>
+            <a href="#" id="userprofile-more">less...</a> 
+        </div>
+        <h3 id="recept-title">Receipts</h3>
+        <div id="user-receipts">
+            <div class="popular-meal-card">
+                <button class="like-meal"><ion-icon name="heart-outline"></ion-icon></button>
+                <img src="../static/files/pizza-1.jpeg" alt="pizza">
+                <div class="user-inter">
+                    <div class="meal-name"><ion-icon name="star-outline"></ion-icon><span>5</span></div>
+                    <div class="meal-cook-time"><ion-icon name="alarm-outline"></ion-icon><span >20min</span></div>
+                </div>
+            </div>
+            <div class="popular-meal-card">
+                <button class="like-meal"><ion-icon name="heart-outline"></ion-icon></button>
+                <img src="../static/files/pizza-1.jpeg" alt="pizza">
+                <div class="user-inter">
+                    <div class="meal-name"><ion-icon name="star-outline"></ion-icon><span>5</span></div>
+                    <div class="meal-cook-time"><ion-icon name="alarm-outline"></ion-icon><span >20min</span></div>
+                </div>
+            </div>
+            <div class="popular-meal-card">
+                <button class="like-meal"><ion-icon name="heart-outline"></ion-icon></button>
+                <img src="../static/files/ugali.jpg" alt="pizza">
+                <div class="user-inter">
+                    <div class="meal-name"><ion-icon name="star-outline"></ion-icon><span>5</span></div>
+                    <div class="meal-cook-time"><ion-icon name="alarm-outline"></ion-icon><span >20min</span></div>
+                </div>
+            </div>
+            <div class="popular-meal-card">
+                <button class="like-meal"><ion-icon name="heart-outline"></ion-icon></button>
+                <img src="../static/files/pizza-1.jpeg" alt="pizza">
+                <div class="user-inter">
+                    <div class="meal-name"><ion-icon name="star-outline"></ion-icon><span>5</span></div>
+                    <div class="meal-cook-time"><ion-icon name="alarm-outline"></ion-icon><span >20min</span></div>
+                </div>
+            </div>
+            <div class="popular-meal-card">
+                <button class="like-meal"><ion-icon name="heart-outline"></ion-icon></button>
+                <img src="../static/files/pasta.jpeg" alt="pizza">
+                <div class="user-inter">
+                    <div class="meal-name"><ion-icon name="star-outline"></ion-icon><span>5</span></div>
+                    <div class="meal-cook-time"><ion-icon name="alarm-outline"></ion-icon><span >20min</span></div>
+                </div>
+            </div>
+            <div class="popular-meal-card">
+                <button  class="like-meal"><ion-icon name="heart-outline"></ion-icon></button>
+                <img src="../static/files/burger.jpeg" alt="pizza">
+                <div class="user-inter">
+                    <div class="meal-name"><ion-icon name="star-outline"></ion-icon><span>5</span></div>
+                    <div class="meal-cook-time"><ion-icon name="alarm-outline"></ion-icon><span >20min</span></div>
+                </div>
+                </div>
+            <div class="popular-meal-card">
+                <button  class="like-meal"><ion-icon name="heart-outline"></ion-icon></button>
+                <img src="../static/files/chicken.jpg" alt="pizza">
+                <div class="user-inter">
+                    <div class="meal-name"><ion-icon name="star-outline"></ion-icon><span>5</span></div>
+                    <div class="meal-cook-time"><ion-icon name="alarm-outline"></ion-icon><span >20min</span></div>
+                </div>
+            </div>
+        </div>
+        <div id="chiefchef-homepage-navigation">
+            <div id="chiefchef-homepage-navigation-inner">
+                <div class="navigation-item btn-add-recipe" id="btn-add-recipe" onclick="changetabs('chiefchef-add-recipe', 0);"><ion-icon name="add-outline"></ion-icon></div>
+                <div class="navigation-item btn-gohome" onclick="changetabs('chiefchef-homepage', 1);"><ion-icon name="home"></ion-icon>Home</div>
+                <div class="navigation-item btn-gofav" onclick="changetabs('chiefchef-fav', 2);"><ion-icon name="heart"></ion-icon>Fav</div>
+                <div class="navigation-item btn-goreel" onclick="changetabs('chiefchef-reel', 3);"><ion-icon name="play-circle"></ion-icon>Reel</div>
+                <div class="navigation-item btn-goprofile" onclick="changetabs('chiefchef-profile', 4);"><ion-icon name="person"></ion-icon>Profile</div>
+            </div>
+        </div>
+    </div>
+    <div id="chiefchef-add-recipe">
+        <div id="top-bar">
+            <button type="button">Cancel</button>
+            <button type="button" id="done-ingridient"><ion-icon name="checkmark-circle-outline"></ion-icon>Done</button>
+        </div>
+        <div id="in-container">
+            <div id="add-recipe-image-vid">
+                <img src="../static/files/add-file.png" alt="" id="empty-file-icon">
+                <p>Add a file upto(20 min)</p>
+            </div>
+            <div id="add-recipe-name">
+                <label for="recipe-name">Recipe Name</label>
+                <input type="text" id="recipe-name" placeholder="Enter Recipe Name">
+            </div>
+            <div id="add-recipe-desc">
+                <label for="recipe-desc">Description</label>
+                <textarea id="recipe-desc" placeholder="Describe your recipe"></textarea>
+            </div>  
+            <div id="add-recipe-cook-time">
+                <label for="recipe-cook-time">Cooking Duration: <span id="cook-time-value">10</span> min</label>
+                <input type="range" id="recipe-cook-time" min="0" max="120" step="5" value="10">
+            </div>
+            
+            <ul id="ingridients-list">
+               
+            </ul>
+           
+            </div>
+            <div id="crazycont">
+                <div id="more-on-ingredient">
+                    <label for="quantity-no">Quantity</label>
+                    <input type="number" name="quantity" id="quantity-no" min="1" required placeholder="e.g. 1kg, 500ml , 15,">
+                    
+                    <label for="unit-no">Unit</label>
+                    <input type="text" name="unit" id="unit-no" placeholder="e.g., grams, liters" required>
+                    
+                    <label for="description">Description</label>
+                    <textarea name="description" id="description" placeholder="Describe the ingredient" aria-label="Describe the ingredient" required></textarea>
+                    
+                    <button type="button" id="add-ingredient-btn">
+                        <ion-icon name="add-circle-outline"></ion-icon> save
+                    </button>
+                </div>
+                
+                
+                <div id="add-recipe-ingredients">
+                    <label for="recipe-ingredients">Ingredients</label>
+                    <div id="inlinet">
+                        <img src="https://useanimations.com/images/icon-responsive.svg" alt="more" title="More:quatity, unit,size" id="show-more-ing">
+                        <input type="text" name="add-ingridient" id="add-ingridient" placeholder="Enter ingredient name">
+                    </div>
+                   <button><ion-icon name="add-outline"></ion-icon>add ingredients</button>
+                </div>
+            </div>
+          
+        </div>
+    </div>
+    <script src="../static/js/swper.js"></script>
+    <script src="../static/js/icons.js"></script>
+   
+
+</body>
+</html>

@@ -1,0 +1,1698 @@
+window.onload = function(){
+    /* Web cover */
+    /* Play animation in loop */
+    var svgContainer = document.querySelector('.anim-webcover');
+    var animItem = bodymovin.loadAnimation({
+      wrapper: svgContainer,
+      animType: 'svg',
+      loop: true,
+      path: "animations/webcover.json"
+    });
+    
+    /* icon Scroll down */
+    /* Play animation in loop */
+    var svgContainer = document.querySelector('.anim-icon-scroll-down');
+    var animItem = bodymovin.loadAnimation({
+      wrapper: svgContainer,
+      animType: 'svg',
+      loop: true,
+      path: "animations/scrolldown.json"
+    });
+
+    /* icon Arrow down */
+    /* Play animation in loop */
+    var svgContainer = document.querySelector('.anim-icon-arrow-down');
+    var animItem = bodymovin.loadAnimation({
+      wrapper: svgContainer,
+      animType: 'svg',
+      loop: true,
+      path: "animations/arrow-down.json"
+    });
+    
+    /* Arrow up */
+    /* Play animation in loop */
+    var svgContainer = document.querySelector('.anim-icon-arrow-up');
+    var animItem = bodymovin.loadAnimation({
+      wrapper: svgContainer,
+      animType: 'svg',
+      loop: true,
+      path: "animations/arrow-up.json"
+    });
+    
+    /* icon Alert circle 001 */
+    /* Play animation in loop */
+    var svgContainer = document.querySelector('.anim-icon-alert-circle-001');
+    var animItem = bodymovin.loadAnimation({
+      wrapper: svgContainer,
+      animType: 'svg',
+      loop: true,
+      path: "animations/alert-circle-001.json"
+    });
+
+    /* icon Alert octagon 001 */
+    /* Play animation in loop */
+    var svgContainer = document.querySelector('.anim-icon-alert-octagon-001');
+    var animItem = bodymovin.loadAnimation({
+      wrapper: svgContainer,
+      animType: 'svg',
+      loop: true,
+      path: "animations/alert-octagon-001.json"
+    });
+
+    /* icon Alert triangle 001 */
+    /* Play animation in loop */
+    var svgContainer = document.querySelector('.anim-icon-alert-triangle-001');
+    var animItem = bodymovin.loadAnimation({
+      wrapper: svgContainer,
+      animType: 'svg',
+      loop: true,
+      path: "animations/alert-triangle-001.json"
+    });
+
+    /* icon Error */
+    /* Play animation in loop */
+    var svgContainer = document.querySelector('.anim-icon-error');
+    var animItem = bodymovin.loadAnimation({
+      wrapper: svgContainer,
+      animType: 'svg',
+      loop: true,
+      path: "animations/error.json"
+    });
+
+    /* icon Activity */
+    /* Play animation in loop */
+    var svgContainer = document.querySelector('.anim-icon-activity-001');
+    var animItem = bodymovin.loadAnimation({
+      wrapper: svgContainer,
+      animType: 'svg',
+      loop: true,
+      path: "animations/activity.json"
+    });
+
+    /* icon Airplay/
+    /* Play animation in loop */
+    var svgContainer = document.querySelector('.anim-icon-airplay-001');
+    var animItem = bodymovin.loadAnimation({
+      wrapper: svgContainer,
+      animType: 'svg',
+      loop: true,
+      path: "animations/airplay-001.json"
+    });
+    
+    /* icon loading/
+    /* Play animation in loop */
+    var svgContainer = document.querySelector('.anim-icon-loading-001');
+    var animItem = bodymovin.loadAnimation({
+      wrapper: svgContainer,
+      animType: 'svg',
+      loop: true,
+      path: "animations/loading-001.json"
+    });
+    
+    /* icon loading V2/
+    /* Play animation in loop */
+    var svgContainer = document.querySelector('.anim-icon-loading-v2');
+    var animItem = bodymovin.loadAnimation({
+      wrapper: svgContainer,
+      animType: 'svg',
+      loop: true,
+      path: "animations/loading-v2.json"
+    });
+
+    /* icon loading V3/
+    /* Play animation in loop */
+    var svgContainer = document.querySelector('.anim-icon-loadingV3');
+    var animItem = bodymovin.loadAnimation({
+      wrapper: svgContainer,
+      animType: 'svg',
+      loop: true,
+      path: "animations/loadingV3.json"
+    });
+
+    /* icon loading V4/
+    /* Play animation in loop */
+    var svgContainer = document.querySelector('.anim-icon-loadingV4');
+    var animItem = bodymovin.loadAnimation({
+      wrapper: svgContainer,
+      animType: 'svg',
+      loop: true,
+      path: "animations/loading-V4.json"
+    });
+
+    /* icon Infinity/
+    /* Play animation in loop */
+    var svgContainer = document.querySelector('.anim-icon-infinity');
+    var animItem = bodymovin.loadAnimation({
+      wrapper: svgContainer,
+      animType: 'svg',
+      loop: true,
+      path: "animations/infinity.json"
+    });
+    
+    /* icon Notification Bell On/Off */
+    /* Play animation on click - second click play animation forward */
+    var icon = document.querySelector('.anim-icon-notification-bell-001');
+
+    var animation = bodymovin.loadAnimation({
+            container: icon,
+            renderer: 'svg',
+            loop: false,
+            autoplay: false,
+            path: "animations/notification-bell-on-off-001.json"
+    });
+    animation.setSpeed(1);
+
+
+    var direction = 1;
+      icon.addEventListener('click', (e) => {
+      animation.setDirection(direction);
+      animation.play();
+      direction = -direction;
+    });
+
+    var svgContainer = document.querySelector('.anim-icon-notification-bell-003');
+    var animItem = bodymovin.loadAnimation({
+      wrapper: svgContainer,
+      animType: 'svg',
+      loop: true,
+      path: "animations/notification-V3.json"
+    });
+
+    var svgContainer = document.querySelector('.anim-icon-notification-bell-004');
+    var animItem = bodymovin.loadAnimation({
+      wrapper: svgContainer,
+      animType: 'svg',
+      loop: true,
+      path: "animations/notification-V4.json"
+    });
+
+    /* icon Ntofication Burger menu 001 */
+    /* Play animation on click - second click play animation forward */
+    var icon2 = document.querySelector('.anim-icon-menu-001');
+
+    var animation2 = bodymovin.loadAnimation({
+            container: icon2,
+            renderer: 'svg',
+            loop: false,
+            autoplay: false,
+            path: "animations/menu-001.json"
+    });
+    animation2.setSpeed(1);
+
+
+    var direction2 = 1;
+      icon2.addEventListener('click', (e) => {
+      animation2.setDirection(direction2);
+      animation2.play();
+      direction2 = -direction2;
+    });
+
+    /* icon Ntofication Check box */
+    /* Play animation on click - second click play animation forward */
+    var icon3 = document.querySelector('.anim-icon-check-box-001');
+
+    var animation3 = bodymovin.loadAnimation({
+            container: icon3,
+            renderer: 'svg',
+            loop: false,
+            autoplay: false,
+            path: "animations/check-box-001.json"
+    });
+    animation3.setSpeed(1);
+
+
+    var direction3 = 1;
+      icon3.addEventListener('click', (e) => {
+      animation3.setDirection(direction3);
+      animation3.play();
+      direction3 = -direction3;
+    });
+
+    /* icon Ntofication Radio button */
+    /* Play animation on click - second click play animation forward */
+    var icon4 = document.querySelector('.anim-icon-radio-button-001');
+
+    var animation4 = bodymovin.loadAnimation({
+            container: icon4,
+            renderer: 'svg',
+            loop: false,
+            autoplay: false,
+            path: "animations/radio-button-001.json"
+    });
+    animation4.setSpeed(1);
+
+
+    var direction4 = 1;
+      icon4.addEventListener('click', (e) => {
+      animation4.setDirection(direction4);
+      animation4.play();
+      direction4 = -direction4;
+    });
+
+    /* icon Ntofication Burger menu 002 */
+    /* Play animation on click - second click play animation forward */
+    var icon5 = document.querySelector('.anim-icon-menu-002');
+
+    var animation5 = bodymovin.loadAnimation({
+            container: icon5,
+            renderer: 'svg',
+            loop: false,
+            autoplay: false,
+            path: "animations/menu-002.json"
+    });
+    animation5.setSpeed(1);
+
+
+    var direction5 = 1;
+      icon5.addEventListener('click', (e) => {
+      animation5.setDirection(direction5);
+      animation5.play();
+      direction5 = -direction5;
+    });
+
+    /* icon Ntofication Burger menu 003 */
+    /* Play animation on click - second click play animation forward */
+    var icon6 = document.querySelector('.anim-icon-menu-003');
+
+    var animation6 = bodymovin.loadAnimation({
+            container: icon6,
+            renderer: 'svg',
+            loop: false,
+            autoplay: false,
+            path: "animations/menu-003.json"
+    });
+    animation6.setSpeed(1);
+
+
+    var direction6 = 1;
+      icon6.addEventListener('click', (e) => {
+      animation6.setDirection(direction6);
+      animation6.play();
+      direction6 = -direction6;
+    });
+
+    /* icon Ntofication Settings 002 */
+    /* Play animation on click - second click play animation forward */
+    var icon7 = document.querySelector('.anim-icon-settings-002');
+
+    var animation7 = bodymovin.loadAnimation({
+            container: icon7,
+            renderer: 'svg',
+            loop: false,
+            autoplay: false,
+            path: "animations/settings-002.json"
+    });
+    animation7.setSpeed(1);
+
+
+    var direction7 = 1;
+      icon7.addEventListener('click', (e) => {
+      animation7.setDirection(direction7);
+      animation7.play();
+      direction7 = -direction7;
+    });
+
+    /* icon Ntofication menu 004 */
+    /* Play animation on click - second click play animation forward */
+    var icon8 = document.querySelector('.anim-icon-menu-004');
+
+    var animation8 = bodymovin.loadAnimation({
+            container: icon8,
+            renderer: 'svg',
+            loop: false,
+            autoplay: false,
+            path: "animations/menu-004.json"
+    });
+    animation8.setSpeed(1.4);
+
+
+    var direction8 = 1;
+      icon8.addEventListener('click', (e) => {
+      animation8.setDirection(direction8);
+      animation8.play();
+      direction8 = -direction8;
+    });
+
+    /* icon Ntofication volume 001 */
+    /* Play animation on click - second click play animation forward */
+    var icon9 = document.querySelector('.anim-icon-volume-001');
+
+    var animation9 = bodymovin.loadAnimation({
+            container: icon9,
+            renderer: 'svg',
+            loop: false,
+            autoplay: false,
+            path: "animations/volume-001.json"
+    });
+    animation9.setSpeed(1);
+
+
+    var direction9 = 1;
+      icon9.addEventListener('click', (e) => {
+      animation9.setDirection(direction9);
+      animation9.play();
+      direction9 = -direction9;
+    });
+
+    /* icon Ntofication microphone 001 */
+    /* Play animation on click - second click play animation forward */
+    var icon10 = document.querySelector('.anim-icon-mic-001');
+
+    var animation10 = bodymovin.loadAnimation({
+            container: icon10,
+            renderer: 'svg',
+            loop: false,
+            autoplay: false,
+            path: "animations/mic-on-off-001.json"
+    });
+    animation10.setSpeed(1);
+
+
+    var direction10 = 1;
+      icon10.addEventListener('click', (e) => {
+      animation10.setDirection(direction10);
+      animation10.play();
+      direction10 = -direction10;
+    });
+
+    /* icon Ntofication microphone 001 */
+    /* Play animation on click - second click play animation forward */
+    var icon11 = document.querySelector('.anim-icon-mic-002');
+
+    var animation11 = bodymovin.loadAnimation({
+            container: icon11,
+            renderer: 'svg',
+            loop: false,
+            autoplay: false,
+            path: "animations/mic-on-off-002.json"
+    });
+    animation11.setSpeed(1);
+
+
+    var direction11 = 1;
+      icon11.addEventListener('click', (e) => {
+      animation11.setDirection(direction11);
+      animation11.play();
+      direction11 = -direction11;
+    });
+
+    /* icon Ntofication video on off 001 */
+    /* Play animation on click - second click play animation forward */
+    var icon12 = document.querySelector('.anim-icon-video-001');
+
+    var animation12 = bodymovin.loadAnimation({
+            container: icon12,
+            renderer: 'svg',
+            loop: false,
+            autoplay: false,
+            path: "animations/video-on-off-001.json"
+    });
+    animation12.setSpeed(1);
+
+
+    var direction12 = 1;
+      icon12.addEventListener('click', (e) => {
+      animation12.setDirection(direction12);
+      animation12.play();
+      direction12 = -direction12;
+    });
+
+    /* icon Ntofication video on off 002 */
+    /* Play animation on click - second click play animation forward */
+    var icon13 = document.querySelector('.anim-icon-video-002');
+
+    var animation13 = bodymovin.loadAnimation({
+            container: icon13,
+            renderer: 'svg',
+            loop: false,
+            autoplay: false,
+            path: "animations/video-on-off-002.json"
+    });
+    animation13.setSpeed(1);
+
+
+    var direction13 = 1;
+      icon13.addEventListener('click', (e) => {
+      animation13.setDirection(direction13);
+      animation13.play();
+      direction13 = -direction13;
+    });
+
+    /* icon Settings 001 */
+    /* Play animation on hover */
+    var icon14 = document.querySelector('.anim-icon-settings-001');
+
+    var animation14 = bodymovin.loadAnimation({
+            container: icon14,
+            renderer: 'svg',
+            loop: false,
+            autoplay: false,
+            path: "animations/settings-001.json"
+    });
+    animation14.setSpeed(1);
+
+
+    var direction14 = 1;
+      icon14.addEventListener('mouseenter', (e) => {
+      animation14.setDirection(direction14);
+      animation14.play();
+    });
+
+      icon14.addEventListener('mouseleave', (e) => {
+      animation14.setDirection(-direction14);
+      animation14.play();
+    });
+
+    /* icon Ntofication Bell On/Off 002 */
+    /* Play animation on click - second click play animation forward */
+    var icon15 = document.querySelector('.anim-icon-notification-bell-002');
+
+    var animation15 = bodymovin.loadAnimation({
+            container: icon15,
+            renderer: 'svg',
+            loop: false,
+            autoplay: false,
+            path: "animations/notification-bell-on-off-002.json"
+    });
+    animation15.setSpeed(1);
+
+
+    var direction15 = 1;
+      icon15.addEventListener('click', (e) => {
+      animation15.setDirection(direction15);
+      animation15.play();
+      direction15 = -direction15;
+    });
+
+    /* icon Ntofication lock 001 */
+    /* Play animation on click - second click play animation forward */
+    var icon16 = document.querySelector('.anim-icon-lock-001');
+
+    var animation16 = bodymovin.loadAnimation({
+            container: icon16,
+            renderer: 'svg',
+            loop: false,
+            autoplay: false,
+            path: "animations/lock-001.json"
+    });
+    animation16.setSpeed(1);
+
+
+    var direction16 = 1;
+      icon16.addEventListener('click', (e) => {
+      animation16.setDirection(direction16);
+      animation16.play();
+      direction16 = -direction16;
+    });
+    
+    /* icon toggle */
+    /* Play animation on click - second click play animation forward */
+    var iconToggle = document.querySelector('.anim-icon-toggle');
+
+    var animationToggle = bodymovin.loadAnimation({
+            container: iconToggle,
+            renderer: 'svg',
+            loop: false,
+            autoplay: false,
+            path: "animations/toggle.json"
+    });
+    animationToggle.setSpeed(1);
+
+
+    var directionToggle = 1;
+      iconToggle.addEventListener('click', (e) => {
+      animationToggle.setDirection(directionToggle);
+      animationToggle.play();
+      directionToggle = -directionToggle;
+    });
+    
+    /* icon visibility */
+    /* Play animation on click - second click play animation forward */
+    var iconVisibility = document.querySelector('.anim-icon-visibility');
+
+    var animationVisibility = bodymovin.loadAnimation({
+            container: iconVisibility,
+            renderer: 'svg',
+            loop: false,
+            autoplay: false,
+            path: "animations/visibility.json"
+    });
+    animationVisibility.setSpeed(1);
+
+
+    var directionVisibility = 1;
+      iconVisibility.addEventListener('click', (e) => {
+      animationVisibility.setDirection(directionVisibility);
+      animationVisibility.play();
+      directionVisibility = -directionVisibility;
+    });
+    
+    /* icon visibility V2 */
+    /* Play animation on click - second click play animation forward */
+    var iconVisibilityV2 = document.querySelector('.anim-icon-visibility-v2');
+
+    var animationVisibilityV2 = bodymovin.loadAnimation({
+            container: iconVisibilityV2,
+            renderer: 'svg',
+            loop: false,
+            autoplay: false,
+            path: "animations/visibility-v2.json"
+    });
+    animationVisibilityV2.setSpeed(1);
+
+
+    var directionVisibilityV2 = 1;
+      iconVisibilityV2.addEventListener('click', (e) => {
+      animationVisibilityV2.setDirection(directionVisibilityV2);
+      animationVisibilityV2.play();
+      directionVisibilityV2 = -directionVisibilityV2;
+    });
+
+    /* icon visibility V3 */
+    /* Play animation on click - second click play animation forward */
+    var iconVisibilityV3 = document.querySelector('.anim-icon-visibility-v3');
+
+    var animationVisibilityV3 = bodymovin.loadAnimation({
+            container: iconVisibilityV3,
+            renderer: 'svg',
+            loop: false,
+            autoplay: false,
+            path: "animations/visibility-V3.json"
+    });
+    animationVisibilityV3.setSpeed(1);
+
+
+    var directionVisibilityV3 = 1;
+      iconVisibilityV3.addEventListener('click', (e) => {
+      animationVisibilityV3.setDirection(directionVisibilityV3);
+      animationVisibilityV3.play();
+      directionVisibilityV3 = -directionVisibilityV3;
+    });
+    
+    /* icon heart */
+    /* Play animation on click - second click play animation forward */
+    var iconHeart = document.querySelector('.anim-icon-heart');
+
+    var animationHeart = bodymovin.loadAnimation({
+            container: iconHeart,
+            renderer: 'svg',
+            loop: false,
+            autoplay: false,
+            path: "animations/heart.json"
+    });
+    animationHeart.setSpeed(1);
+
+
+    var directionHeart = 1;
+      iconHeart.addEventListener('click', (e) => {
+      animationHeart.setDirection(directionHeart);
+      animationHeart.play();
+      directionHeart = -directionHeart;
+    });
+    
+    /* icon maximinize - minimize */
+    /* Play animation on click - second click play animation forward */
+    var iconMaximizeMinimize = document.querySelector('.anim-icon-maximize-minimize');
+
+    var animationMaximizeMinimize = bodymovin.loadAnimation({
+            container: iconMaximizeMinimize,
+            renderer: 'svg',
+            loop: false,
+            autoplay: false,
+            path: "animations/maximize-minimize.json"
+    });
+    animationMaximizeMinimize.setSpeed(1);
+
+
+    var directionMaximizeMinimize = 1;
+      iconMaximizeMinimize.addEventListener('click', (e) => {
+      animationMaximizeMinimize.setDirection(directionMaximizeMinimize);
+      animationMaximizeMinimize.play();
+      directionMaximizeMinimize = -directionMaximizeMinimize;
+    });
+    
+    /* icon maximinize - minimize V2 */
+    /* Play animation on click - second click play animation forward */
+    var iconMaximizeMinimizeV2 = document.querySelector('.anim-icon-maximize-minimize-v2');
+
+    var animationMaximizeMinimizeV2 = bodymovin.loadAnimation({
+            container: iconMaximizeMinimizeV2,
+            renderer: 'svg',
+            loop: false,
+            autoplay: false,
+            path: "animations/maximize-minimize-v2.json"
+    });
+    animationMaximizeMinimizeV2.setSpeed(1);
+
+
+    var directionMaximizeMinimizeV2 = 1;
+      iconMaximizeMinimizeV2.addEventListener('click', (e) => {
+      animationMaximizeMinimizeV2.setDirection(directionMaximizeMinimizeV2);
+      animationMaximizeMinimizeV2.play();
+      directionMaximizeMinimizeV2 = -directionMaximizeMinimizeV2;
+    });
+    
+    /* icon play pause circle */
+    /* Play animation on click - second click play animation forward */
+    var iconPlayPauseCircle = document.querySelector('.anim-icon-play-pause-circle');
+
+    var animationPlayPauseCircle = bodymovin.loadAnimation({
+            container: iconPlayPauseCircle,
+            renderer: 'svg',
+            loop: false,
+            autoplay: false,
+            path: "animations/play-pause-circle.json"
+    });
+    animationPlayPauseCircle.setSpeed(1);
+
+
+    var directionPlayPauseCircle = 1;
+      iconPlayPauseCircle.addEventListener('click', (e) => {
+      animationPlayPauseCircle.setDirection(directionPlayPauseCircle);
+      animationPlayPauseCircle.play();
+      directionPlayPauseCircle = -directionPlayPauseCircle;
+    });
+    
+    /* icon play pause */
+    /* Play animation on click - second click play animation forward */
+    var iconPlayPause = document.querySelector('.anim-icon-play-pause');
+
+    var animationPlayPause = bodymovin.loadAnimation({
+            container: iconPlayPause,
+            renderer: 'svg',
+            loop: false,
+            autoplay: false,
+            path: "animations/play-pause.json"
+    });
+    animationPlayPause.setSpeed(1);
+
+
+    var directionPlayPause = 1;
+      iconPlayPause.addEventListener('click', (e) => {
+      animationPlayPause.setDirection(directionPlayPause);
+      animationPlayPause.play();
+      directionPlayPause = -directionPlayPause;
+    });
+    
+    /* icon skip forward */
+    /* Play animation on click - second click play animation forward */
+    var iconSkipForward = document.querySelector('.anim-icon-skip-forward');
+
+    var animationSkipForward = bodymovin.loadAnimation({
+            container: iconSkipForward,
+            renderer: 'svg',
+            loop: false,
+            autoplay: false,
+            path: "animations/skip-forward.json"
+    });
+    animationSkipForward.setSpeed(1);
+
+      iconSkipForward.addEventListener('click', function() {
+      animationSkipForward.playSegments([0,60], true);
+    });
+    
+    /* icon skip back */
+    /* Play animation on click - second click play animation forward */
+    var iconSkipBack = document.querySelector('.anim-icon-skip-back');
+
+    var animationSkipBack = bodymovin.loadAnimation({
+            container: iconSkipBack,
+            renderer: 'svg',
+            loop: false,
+            autoplay: false,
+            path: "animations/skip-back.json"
+    });
+    animationSkipBack.setSpeed(1);
+
+      iconSkipBack.addEventListener('click', function() {
+      animationSkipBack.playSegments([0,60], true);
+    });
+
+    /* icon arrow left circle */
+    /* Play animation on click - second click play animation forward */
+    var iconArrowLeftCircle = document.querySelector('.anim-icon-arrow-left-circle');
+
+    var animationArrowLeftCircle = bodymovin.loadAnimation({
+            container: iconArrowLeftCircle,
+            renderer: 'svg',
+            loop: false,
+            autoplay: false,
+            path: "animations/arrow-left-circle.json"
+    });
+    animationArrowLeftCircle.setSpeed(1);
+
+      iconArrowLeftCircle.addEventListener('click', function() {
+      animationArrowLeftCircle.playSegments([0,75], true);
+    });
+
+    /* icon arrow up circle */
+    /* Play animation on click - second click play animation forward */
+    var iconArrowUpCircle = document.querySelector('.anim-icon-arrow-up-circle');
+
+    var animationArrowUpCircle = bodymovin.loadAnimation({
+            container: iconArrowUpCircle,
+            renderer: 'svg',
+            loop: false,
+            autoplay: false,
+            path: "animations/arrow-up-circle.json"
+    });
+    animationArrowUpCircle.setSpeed(1);
+
+      iconArrowUpCircle.addEventListener('click', function() {
+      animationArrowUpCircle.playSegments([0,75], true);
+    });
+
+    /* icon arrow Right circle */
+    /* Play animation on click - second click play animation forward */
+    var iconArrowRightCircle = document.querySelector('.anim-icon-arrow-right-circle');
+
+    var animationArrowRightCircle = bodymovin.loadAnimation({
+            container: iconArrowRightCircle,
+            renderer: 'svg',
+            loop: false,
+            autoplay: false,
+            path: "animations/arrow-right-circle.json"
+    });
+    animationArrowRightCircle.setSpeed(1);
+
+      iconArrowRightCircle.addEventListener('click', function() {
+      animationArrowRightCircle.playSegments([0,75], true);
+    });
+
+    /* icon arrow down circle */
+    /* Play animation on click - second click play animation forward */
+    var iconArrowDownCircle = document.querySelector('.anim-icon-arrow-down-circle');
+
+    var animationArrowDownCircle = bodymovin.loadAnimation({
+            container: iconArrowDownCircle,
+            renderer: 'svg',
+            loop: false,
+            autoplay: false,
+            path: "animations/arrow-down-circle.json"
+    });
+    animationArrowDownCircle.setSpeed(1);
+
+      iconArrowDownCircle.addEventListener('click', function() {
+      animationArrowDownCircle.playSegments([0,75], true);
+    });
+    
+    /* icon Download */
+    /* Play animation on click - second click restart and play again */
+    var iconDownload = document.querySelector('.anim-icon-download');
+
+    var animationDownload = bodymovin.loadAnimation({
+            container: iconDownload,
+            renderer: 'svg',
+            loop: false,
+            autoplay: false,
+            path: "animations/download.json"
+    });
+    animationDownload.setSpeed(1);
+
+      iconDownload.addEventListener('click', function() {
+      animationDownload.playSegments([0,120], true);
+    });
+
+    /* icon chevron left */
+    /* Play animation on click - second click restart and play again */
+    var iconChevronLeft = document.querySelector('.anim-icon-chevron-l');
+
+    var animationChevronLeft = bodymovin.loadAnimation({
+            container: iconChevronLeft,
+            renderer: 'svg',
+            loop: false,
+            autoplay: false,
+            path: "animations/chevron-left.json"
+    });
+    animationChevronLeft.setSpeed(1);
+
+      iconChevronLeft.addEventListener('click', function() {
+      animationChevronLeft.playSegments([0,30], true);
+    });
+
+    /* icon chevron left */
+    /* Play animation on click - second click restart and play again */
+    var iconRefresh = document.querySelector('.anim-icon-refresh');
+
+    var animationRefresh = bodymovin.loadAnimation({
+            container: iconRefresh,
+            renderer: 'svg',
+            loop: false,
+            autoplay: false,
+            path: "animations/refresh.json"
+    });
+    animationRefresh.setSpeed(1);
+
+      iconRefresh.addEventListener('click', function() {
+      animationRefresh.playSegments([0,60], true);
+    });
+
+    /* icon Filter */
+    /* Play animation on hover */
+    var iconFilter = document.querySelector('.anim-icon-filter');
+
+    var animationFilter = bodymovin.loadAnimation({
+            container: iconFilter,
+            renderer: 'svg',
+            loop: false,
+            autoplay: false,
+            path: "animations/filter.json"
+    });
+    animationFilter.setSpeed(1);
+
+      iconFilter.addEventListener('click', function() {
+      animationFilter.playSegments([0,60], true);
+    });
+
+    /* icon chevron right */
+    /* Play animation on click - second click restart and play again */
+    var iconChevronRight = document.querySelector('.anim-icon-chevron-r');
+
+    var animationChevronRight = bodymovin.loadAnimation({
+            container: iconChevronRight,
+            renderer: 'svg',
+            loop: false,
+            autoplay: false,
+            path: "animations/chevron-right.json"
+    });
+    animationChevronRight.setSpeed(1);
+
+      iconChevronRight.addEventListener('click', function() {
+      animationChevronRight.playSegments([0,30], true);
+    });
+    
+    /* icon bookmark */
+    /* Play animation on click - second click play animation forward */
+    var iconBookmark = document.querySelector('.anim-icon-bookmark');
+
+    var animationBookmark = bodymovin.loadAnimation({
+            container: iconBookmark,
+            renderer: 'svg',
+            loop: false,
+            autoplay: false,
+            path: "animations/bookmark.json"
+    });
+    animationBookmark.setSpeed(1);
+
+
+    var directionBookmark = 1;
+      iconBookmark.addEventListener('click', (e) => {
+      animationBookmark.setDirection(directionBookmark);
+      animationBookmark.play();
+      directionBookmark = -directionBookmark;
+    });
+    
+    /* icon star */
+    /* Play animation on click - second click play animation forward */
+    var iconStar = document.querySelector('.anim-icon-star');
+
+    var animationStar = bodymovin.loadAnimation({
+            container: iconStar,
+            renderer: 'svg',
+            loop: false,
+            autoplay: false,
+            path: "animations/star.json"
+    });
+    animationStar.setSpeed(1);
+
+
+    var directionStar = 1;
+      iconStar.addEventListener('click', (e) => {
+      animationStar.setDirection(directionStar);
+      animationStar.play();
+      directionStar = -directionStar;
+    });
+    
+    /* icon plus to X */
+    /* Play animation on click - second click play animation forward */
+    var iconPlusToX = document.querySelector('.anim-icon-plus-to-x');
+
+    var animationPlusToX = bodymovin.loadAnimation({
+            container: iconPlusToX,
+            renderer: 'svg',
+            loop: false,
+            autoplay: false,
+            path: "animations/plus-to-x.json"
+    });
+    animationPlusToX.setSpeed(1);
+
+
+    var directionPlusToX = 1;
+      iconPlusToX.addEventListener('click', (e) => {
+      animationPlusToX.setDirection(directionPlusToX);
+      animationPlusToX.play();
+      directionPlusToX = -directionPlusToX;
+    });
+
+    /* icon Share */
+    /* Play animation on hover */
+    var iconShare = document.querySelector('.anim-icon-share');
+
+    var animationShare = bodymovin.loadAnimation({
+            container: iconShare,
+            renderer: 'svg',
+            loop: false,
+            autoplay: false,
+            path: "animations/share.json"
+    });
+    animationShare.setSpeed(2);
+
+
+    var directionShare = 1;
+      iconShare.addEventListener('mouseenter', (e) => {
+      animationShare.setDirection(directionShare);
+      animationShare.play();
+    });
+
+      iconShare.addEventListener('mouseleave', (e) => {
+      animationShare.setDirection(-directionShare);
+      animationShare.play();
+    });
+    
+    /* icon trash */
+    /* Play animation on hover */
+    var iconTrash = document.querySelector('.anim-icon-trash');
+
+    var animationTrash = bodymovin.loadAnimation({
+            container: iconTrash,
+            renderer: 'svg',
+            loop: false,
+            autoplay: false,
+            path: "animations/trash.json"
+    });
+    animationTrash.setSpeed(1);
+
+
+    var directionTrash = 1;
+      iconTrash.addEventListener('mouseenter', (e) => {
+      animationTrash.setDirection(directionTrash);
+      animationTrash.play();
+    });
+
+      iconTrash.addEventListener('mouseleave', (e) => {
+      animationTrash.setDirection(-directionTrash);
+      animationTrash.play();
+    });
+    
+    /* icon trash V2 */
+    /* Play animation on hover */
+    var iconTrashV2 = document.querySelector('.anim-icon-trash-V2');
+
+    var animationTrashV2 = bodymovin.loadAnimation({
+            container: iconTrashV2,
+            renderer: 'svg',
+            loop: false,
+            autoplay: false,
+            path: "animations/trash-V2.json"
+    });
+    animationTrashV2.setSpeed(1);
+
+
+    var directionTrashV2 = 1;
+      iconTrashV2.addEventListener('mouseenter', (e) => {
+      animationTrashV2.setDirection(directionTrashV2);
+      animationTrashV2.play();
+    });
+
+      iconTrashV2.addEventListener('mouseleave', (e) => {
+      animationTrashV2.setDirection(-directionTrashV2);
+      animationTrashV2.play();
+    });
+	
+		/* icon archive */
+    /* Play animation on hover */
+    var iconArchive = document.querySelector('.anim-icon-archive');
+
+    var animationArchive = bodymovin.loadAnimation({
+            container: iconArchive,
+            renderer: 'svg',
+            loop: false,
+            autoplay: false,
+            path: "animations/archive.json"
+    });
+    animationArchive.setSpeed(1);
+
+
+    var directionArchive = 1;
+      iconArchive.addEventListener('mouseenter', (e) => {
+      animationArchive.setDirection(directionArchive);
+      animationArchive.play();
+    });
+
+      iconArchive.addEventListener('mouseleave', (e) => {
+      animationArchive.setDirection(-directionArchive);
+      animationArchive.play();
+    });
+
+    /* icon Mail */
+    /* Play animation on hover */
+    var iconMail = document.querySelector('.anim-icon-mail');
+
+    var animationMail = bodymovin.loadAnimation({
+            container: iconMail,
+            renderer: 'svg',
+            loop: false,
+            autoplay: false,
+            path: "animations/mail.json"
+    });
+    animationMail.setSpeed(1);
+
+
+    var directionMail = 1;
+      iconMail.addEventListener('mouseenter', (e) => {
+      animationMail.setDirection(directionMail);
+      animationMail.play();
+    });
+
+      iconMail.addEventListener('mouseleave', (e) => {
+      animationMail.setDirection(-directionMail);
+      animationMail.play();
+    });
+
+    /* icon User-X */
+    /* Play animation on hover */
+    var iconUserX = document.querySelector('.anim-icon-user-x');
+
+    var animationUserX = bodymovin.loadAnimation({
+            container: iconUserX,
+            renderer: 'svg',
+            loop: false,
+            autoplay: false,
+            path: "animations/user-x.json"
+    });
+    animationUserX.setSpeed(1);
+
+
+    var directionUserX = 1;
+      iconUserX.addEventListener('mouseenter', (e) => {
+      animationUserX.setDirection(directionUserX);
+      animationUserX.play();
+    });
+
+      iconUserX.addEventListener('mouseleave', (e) => {
+      animationUserX.setDirection(-directionUserX);
+      animationUserX.play();
+    });
+
+    /* icon User-minus */
+    /* Play animation on hover */
+    var iconUserMinus = document.querySelector('.anim-icon-user-minus');
+
+    var animationUserMinus = bodymovin.loadAnimation({
+            container: iconUserMinus,
+            renderer: 'svg',
+            loop: false,
+            autoplay: false,
+            path: "animations/user-minus.json"
+    });
+    animationUserMinus.setSpeed(1);
+
+
+    var directionUserMinus = 1;
+      iconUserMinus.addEventListener('mouseenter', (e) => {
+      animationUserMinus.setDirection(directionUserMinus);
+      animationUserMinus.play();
+    });
+
+      iconUserMinus.addEventListener('mouseleave', (e) => {
+      animationUserMinus.setDirection(-directionUserMinus);
+      animationUserMinus.play();
+    });
+
+    /* icon User-plus */
+    /* Play animation on hover */
+    var iconUserPlus = document.querySelector('.anim-icon-user-plus');
+
+    var animationUserPlus = bodymovin.loadAnimation({
+            container: iconUserPlus,
+            renderer: 'svg',
+            loop: false,
+            autoplay: false,
+            path: "animations/user-plus.json"
+    });
+    animationUserPlus.setSpeed(1);
+
+
+    var directionUserPlus = 1;
+      iconUserPlus.addEventListener('mouseenter', (e) => {
+      animationUserPlus.setDirection(directionUserPlus);
+      animationUserPlus.play();
+    });
+
+      iconUserPlus.addEventListener('mouseleave', (e) => {
+      animationUserPlus.setDirection(-directionUserPlus);
+      animationUserPlus.play();
+    });
+
+    /* icon Copy */
+    /* Play animation on hover */
+    var iconCopy = document.querySelector('.anim-icon-copy');
+
+    var animationCopy = bodymovin.loadAnimation({
+            container: iconCopy,
+            renderer: 'svg',
+            loop: false,
+            autoplay: false,
+            path: "animations/copy.json"
+    });
+    animationCopy.setSpeed(1);
+
+
+    var directionCopy = 1;
+      iconCopy.addEventListener('mouseenter', (e) => {
+      animationCopy.setDirection(directionCopy);
+      animationCopy.play();
+    });
+
+      iconCopy.addEventListener('mouseleave', (e) => {
+      animationCopy.setDirection(-directionCopy);
+      animationCopy.play();
+    });
+
+    /* icon search to X */
+    /* Play animation on click - second click play animation forward */
+    var iconSearchToX = document.querySelector('.anim-icon-search-to-x');
+
+    var animationSearchToX = bodymovin.loadAnimation({
+            container: iconSearchToX,
+            renderer: 'svg',
+            loop: false,
+            autoplay: false,
+            path: "animations/search-to-x.json"
+    });
+    animationSearchToX.setSpeed(1);
+
+
+    var directionSearchToX = 1;
+      iconSearchToX.addEventListener('click', (e) => {
+      animationSearchToX.setDirection(directionSearchToX);
+      animationSearchToX.play();
+      directionSearchToX = -directionSearchToX;
+    });
+
+    /* icon Facebook */
+    /* Play animation on hover */
+    var iconFacebook = document.querySelector('.anim-icon-facebook');
+
+    var animationFacebook = bodymovin.loadAnimation({
+            container: iconFacebook,
+            renderer: 'svg',
+            loop: true,
+            autoplay: false,
+            path: "animations/facebook.json"
+    });
+    animationFacebook.setSpeed(1);
+
+
+    var directionFacebook = 1;
+      iconFacebook.addEventListener('mouseenter', (e) => {
+      animationFacebook.setDirection(directionFacebook);
+      animationFacebook.play();
+    });
+
+      iconFacebook.addEventListener('mouseleave', (e) => {
+      animationFacebook.stop();
+    });
+
+    /* icon Github */
+    /* Play animation on hover */
+    var iconGithub = document.querySelector('.anim-icon-github');
+
+    var animationGithub = bodymovin.loadAnimation({
+            container: iconGithub,
+            renderer: 'svg',
+            loop: true,
+            autoplay: false,
+            path: "animations/github.json"
+    });
+    animationGithub.setSpeed(1);
+
+
+    var directionGithub = 1;
+      iconGithub.addEventListener('mouseenter', (e) => {
+      animationGithub.setDirection(directionGithub);
+      animationGithub.play();
+    });
+
+      iconGithub.addEventListener('mouseleave', (e) => {
+      animationGithub.stop();
+    });
+
+    /* icon instagram */
+    /* Play animation on hover */
+    var iconInstagram = document.querySelector('.anim-icon-instagram');
+
+    var animationInstagram = bodymovin.loadAnimation({
+            container: iconInstagram,
+            renderer: 'svg',
+            loop: false,
+            autoplay: false,
+            path: "animations/instagram.json"
+    });
+    animationInstagram.setSpeed(1);
+
+
+    var directionInstagram = 1;
+      iconInstagram.addEventListener('mouseenter', (e) => {
+      animationInstagram.setDirection(directionInstagram);
+      animationInstagram.play();
+    });
+
+      iconInstagram.addEventListener('mouseleave', (e) => {
+      animationInstagram.setDirection(-directionInstagram);
+      animationInstagram.play();
+    });
+
+    /* icon Pocket */
+    /* Play animation on hover */
+    var iconPocket = document.querySelector('.anim-icon-pocket');
+
+    var animationPocket = bodymovin.loadAnimation({
+            container: iconPocket,
+            renderer: 'svg',
+            loop: true,
+            autoplay: false,
+            path: "animations/pocket.json"
+    });
+    animationPocket.setSpeed(1);
+
+
+    var directionPocket = 1;
+      iconPocket.addEventListener('mouseenter', (e) => {
+      animationPocket.setDirection(directionPocket);
+      animationPocket.play();
+    });
+
+      iconPocket.addEventListener('mouseleave', (e) => {
+      animationPocket.stop();
+    });
+
+    /* icon Codepen */
+    /* Play animation on hover */
+    var iconCodepen = document.querySelector('.anim-icon-codepen');
+
+    var animationCodepen = bodymovin.loadAnimation({
+            container: iconCodepen,
+            renderer: 'svg',
+            loop: true,
+            autoplay: false,
+            path: "animations/codepen.json"
+    });
+    animationCodepen.setSpeed(1);
+
+
+    var directionCodepen = 1;
+      iconCodepen.addEventListener('mouseenter', (e) => {
+      animationCodepen.setDirection(directionCodepen);
+      animationCodepen.play();
+    });
+
+      iconCodepen.addEventListener('mouseleave', (e) => {
+      animationCodepen.stop();
+    });
+
+    /* icon YouTube */
+    /* Play animation on hover */
+    var iconYouTube = document.querySelector('.anim-icon-youtube-001');
+
+    var animationYouTube = bodymovin.loadAnimation({
+            container: iconYouTube,
+            renderer: 'svg',
+            loop: false,
+            autoplay: false,
+            path: "animations/youtube-001.json"
+    });
+    animationYouTube.setSpeed(1);
+
+
+    var directionYouTube = 1;
+      iconYouTube.addEventListener('mouseenter', (e) => {
+      animationYouTube.setDirection(directionYouTube);
+      animationYouTube.play();
+    });
+
+      iconYouTube.addEventListener('mouseleave', (e) => {
+      animationYouTube.stop();
+    });
+
+    /* icon YouTube V2 */
+    /* Play animation on hover */
+    var iconYouTube2 = document.querySelector('.anim-icon-youtube-002');
+
+    var animationYouTube2 = bodymovin.loadAnimation({
+            container: iconYouTube2,
+            renderer: 'svg',
+            loop: false,
+            autoplay: false,
+            path: "animations/youtube-002.json"
+    });
+    animationYouTube2.setSpeed(1);
+
+
+    var directionYouTube2 = 1;
+      iconYouTube2.addEventListener('mouseenter', (e) => {
+      animationYouTube2.setDirection(directionYouTube2);
+      animationYouTube2.play();
+    });
+
+      iconYouTube2.addEventListener('mouseleave', (e) => {
+      animationYouTube2.stop();
+    });
+
+    /* icon Dribbble */
+    /* Play animation on hover */
+    var iconDribbble = document.querySelector('.anim-icon-dribbble');
+
+    var animationDribbble = bodymovin.loadAnimation({
+            container: iconDribbble,
+            renderer: 'svg',
+            loop: true,
+            autoplay: false,
+            path: "animations/dribbble.json"
+    });
+    animationDribbble.setSpeed(1);
+
+
+    var directionDribbble = 1;
+      iconDribbble.addEventListener('mouseenter', (e) => {
+      animationDribbble.setDirection(directionDribbble);
+      animationDribbble.play();
+    });
+
+      iconDribbble.addEventListener('mouseleave', (e) => {
+      animationDribbble.stop();
+    });
+
+    /* icon Behance */
+    /* Play animation on hover */
+    var iconBehance = document.querySelector('.anim-icon-behance');
+
+    var animationBehance = bodymovin.loadAnimation({
+            container: iconBehance,
+            renderer: 'svg',
+            loop: true,
+            autoplay: false,
+            path: "animations/behance.json"
+    });
+    animationBehance.setSpeed(1);
+
+
+    var directionBehance = 1;
+      iconBehance.addEventListener('mouseenter', (e) => {
+      animationBehance.setDirection(directionBehance);
+      animationBehance.play();
+    });
+
+      iconBehance.addEventListener('mouseleave', (e) => {
+      animationBehance.stop();
+    });
+
+    /* icon Linkedin */
+    /* Play animation on hover */
+    var iconLinkedin = document.querySelector('.anim-icon-linkedin');
+
+    var animationLinkedin = bodymovin.loadAnimation({
+            container: iconLinkedin,
+            renderer: 'svg',
+            loop: true,
+            autoplay: false,
+            path: "animations/linkedin.json"
+    });
+    animationLinkedin.setSpeed(1);
+
+
+    var directionLinkedin = 1;
+      iconLinkedin.addEventListener('mouseenter', (e) => {
+      animationLinkedin.setDirection(directionLinkedin);
+      animationLinkedin.play();
+    });
+
+      iconLinkedin.addEventListener('mouseleave', (e) => {
+      animationLinkedin.stop();
+    });
+
+    /* icon Twitter */
+    /* Play animation on hover */
+    var iconTwitter = document.querySelector('.anim-icon-twitter');
+
+    var animationTwitter = bodymovin.loadAnimation({
+            container: iconTwitter,
+            renderer: 'svg',
+            loop: true,
+            autoplay: false,
+            path: "animations/twitter.json"
+    });
+    animationTwitter.setSpeed(1);
+
+
+    var directionTwitter = 1;
+      iconTwitter.addEventListener('mouseenter', (e) => {
+      animationTwitter.setDirection(directionTwitter);
+      animationTwitter.play();
+    });
+
+      iconTwitter.addEventListener('mouseleave', (e) => {
+      animationTwitter.stop();
+    });
+
+    /* icon Calendar */
+    /* Play animation on hover */
+    var iconCalendar = document.querySelector('.anim-icon-calendar');
+
+    var animationCalendar = bodymovin.loadAnimation({
+            container: iconCalendar,
+            renderer: 'svg',
+            loop: false,
+            autoplay: false,
+            path: "animations/calendar.json"
+    });
+    animationCalendar.setSpeed(1);
+
+
+    var directionCalendar = 1;
+      iconCalendar.addEventListener('mouseenter', (e) => {
+      animationCalendar.setDirection(directionCalendar);
+      animationCalendar.play();
+    });
+
+      iconCalendar.addEventListener('mouseleave', (e) => {
+      animationCalendar.setDirection(-directionCalendar);
+      animationCalendar.play();
+    });
+
+    /* icon edit */
+    /* Play animation on hover */
+    var iconEdit = document.querySelector('.anim-icon-edit');
+
+    var animationEdit = bodymovin.loadAnimation({
+            container: iconEdit,
+            renderer: 'svg',
+            loop: false,
+            autoplay: false,
+            path: "animations/edit.json"
+    });
+    animationEdit.setSpeed(1);
+
+
+    var directionEdit = 1;
+      iconEdit.addEventListener('mouseenter', (e) => {
+      animationEdit.setDirection(directionEdit);
+      animationEdit.play();
+    });
+
+      iconEdit.addEventListener('mouseleave', (e) => {
+      animationEdit.setDirection(-directionEdit);
+      animationEdit.play();
+    });
+
+    /* icon Thumb Up */
+    /* Play animation on double click */
+    var iconThumbUp = document.querySelector('.anim-icon-thumb-up');
+
+    var animationThumbUp = bodymovin.loadAnimation({
+            container: iconThumbUp,
+            renderer: 'svg',
+            loop: false,
+            autoplay: false,
+            path: "animations/thumb-up.json"
+    });
+    animationThumbUp.setSpeed(1);
+
+    var directionThumbUp = 1;
+      iconThumbUp.addEventListener('click', (e) => {
+      animationThumbUp.setDirection(directionThumbUp);
+      animationThumbUp.play();
+      directionThumbUp = -directionThumbUp;
+    });
+
+    /* icon explore */
+    /* Play animation on hover */
+    var iconExplore = document.querySelector('.anim-icon-explore');
+
+    var animationExplore = bodymovin.loadAnimation({
+            container: iconExplore,
+            renderer: 'svg',
+            loop: false,
+            autoplay: false,
+            path: "animations/explore.json"
+    });
+    animationExplore.setSpeed(1);
+
+
+    var directionExplore = 1;
+      iconExplore.addEventListener('mouseenter', (e) => {
+      animationExplore.setDirection(directionExplore);
+      animationExplore.play();
+    });
+
+      iconExplore.addEventListener('mouseleave', (e) => {
+      animationExplore.setDirection(-directionExplore);
+      animationExplore.play();
+    });
+
+    /* icon home */
+    /* Play animation on hover */
+    var iconHome = document.querySelector('.anim-icon-home');
+
+    var animationHome = bodymovin.loadAnimation({
+            container: iconHome,
+            renderer: 'svg',
+            loop: false,
+            autoplay: false,
+            path: "animations/home.json"
+    });
+    animationHome.setSpeed(1);
+
+
+    var directionHome = 1;
+      iconHome.addEventListener('mouseenter', (e) => {
+      animationHome.setDirection(directionHome);
+      animationHome.play();
+    });
+
+      iconHome.addEventListener('mouseleave', (e) => {
+      animationHome.setDirection(-directionHome);
+      animationHome.play();
+    });
+
+    /* icon folder */
+    /* Play animation on hover */
+    var iconFolder = document.querySelector('.anim-icon-folder');
+
+    var animationFolder = bodymovin.loadAnimation({
+            container: iconFolder,
+            renderer: 'svg',
+            loop: false,
+            autoplay: false,
+            path: "animations/folder.json"
+    });
+    animationFolder.setSpeed(1);
+
+
+    var directionFolder = 1;
+      iconFolder.addEventListener('mouseenter', (e) => {
+      animationFolder.setDirection(directionFolder);
+      animationFolder.play();
+    });
+
+      iconFolder.addEventListener('mouseleave', (e) => {
+      animationFolder.setDirection(-directionFolder);
+      animationFolder.play();
+    });
+
+    /* icon zoom in */
+    /* Play animation on hover */
+    var iconZoomIn = document.querySelector('.anim-icon-zoom-in');
+
+    var animationZoomIn = bodymovin.loadAnimation({
+            container: iconZoomIn,
+            renderer: 'svg',
+            loop: false,
+            autoplay: false,
+            path: "animations/zoom-in.json"
+    });
+    animationZoomIn.setSpeed(1);
+
+
+    var directionZoomIn = 1;
+      iconZoomIn.addEventListener('mouseenter', (e) => {
+      animationZoomIn.setDirection(directionZoomIn);
+      animationZoomIn.play();
+    });
+
+      iconZoomIn.addEventListener('mouseleave', (e) => {
+      animationZoomIn.setDirection(-directionZoomIn);
+      animationZoomIn.play();
+    });
+
+    /* icon zoom out */
+    /* Play animation on hover */
+    var iconZoomOut = document.querySelector('.anim-icon-zoom-out');
+
+    var animationZoomOut = bodymovin.loadAnimation({
+            container: iconZoomOut,
+            renderer: 'svg',
+            loop: false,
+            autoplay: false,
+            path: "animations/zoom-out.json"
+    });
+    animationZoomOut.setSpeed(1);
+
+
+    var directionZoomOut = 1;
+      iconZoomOut.addEventListener('mouseenter', (e) => {
+      animationZoomOut.setDirection(directionZoomOut);
+      animationZoomOut.play();
+    });
+
+      iconZoomOut.addEventListener('mouseleave', (e) => {
+      animationZoomOut.setDirection(-directionZoomOut);
+      animationZoomOut.play();
+    });
+
+    /* icon info */
+    /* Play animation on hover */
+    var iconInfo = document.querySelector('.anim-icon-info');
+
+    var animationInfo = bodymovin.loadAnimation({
+            container: iconInfo,
+            renderer: 'svg',
+            loop: false,
+            autoplay: false,
+            path: "animations/info.json"
+    });
+    animationInfo.setSpeed(1);
+
+
+    var directionInfo = 1;
+      iconInfo.addEventListener('mouseenter', (e) => {
+      animationInfo.setDirection(directionInfo);
+      animationInfo.play();
+    });
+
+      iconInfo.addEventListener('mouseleave', (e) => {
+      animationInfo.setDirection(-directionInfo);
+      animationInfo.play();
+    });
+
+    /* icon help */
+    /* Play animation in loop */
+    var svgContainer = document.querySelector('.anim-icon-help');
+    var animItem = bodymovin.loadAnimation({
+      wrapper: svgContainer,
+      animType: 'svg',
+      loop: true,
+      path: "animations/help.json"
+    });
+
+    /* icon checkmark */
+    /* Play animation in loop */
+    var svgContainer = document.querySelector('.anim-icon-checkmark');
+    var animItem = bodymovin.loadAnimation({
+      wrapper: svgContainer,
+      animType: 'svg',
+      loop: true,
+      path: "animations/checkmark.json"
+    });
+
+}

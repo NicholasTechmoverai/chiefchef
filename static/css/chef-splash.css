@@ -1,0 +1,1360 @@
+:root {
+    --default-light-background-color: linear-gradient(blueviolet 25%, rgb(41, 4, 75));
+    --secondary-background-color: forestgreen;
+    --default-dark-background-color: linear-gradient(rgb(72, 72, 72) 25%, rgb(1, 1, 1));
+    --secondary-color: forestgreen;
+    --third-color: rgba(0, 255, 119, 1);
+
+}
+
+body { 
+    padding: 0;
+    margin: 0;
+    background-image: var(--default-dark-background-color);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* splash page*************************************8*/
+#chiefchef-splash{
+    width: 100%;
+    height: 100vh;
+    background: var(--default-dark-background-color);
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: relative;
+    display:non;
+}
+#chiefchef-splash >img{
+    width: 60%;
+    margin: 40px auto;
+}
+
+  #chiefchef-splash::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-image: url(../files/772683.jpeg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    opacity: 0.01; /* Adjust opacity here */
+    z-index: 0; /* Ensure the pseudo-element stays behind the content */
+  }
+  
+  #chiefchef-splash #spinner {
+    position: relative;
+    text-align: center;
+    padding: 20px;
+    font-size: 45px;
+    color: var(--secondary-color);
+    margin-top: auto;
+  }
+  .chiefchef-name {
+    width: 100%;
+    margin-left: 5%;
+    transform: perspective(1000px) rotateX(0deg) rotateY(5deg);
+    transform-style: preserve-3d; /* Ensure child elements are transformed in 3D */
+  }
+  
+  .chiefchef-name h1{
+    font-size: 45px;
+    color: var(--secondary-color);
+    margin-bottom: 0px;
+    font-family:cursive;
+    filter: drop-shadow(1px 1px 3px black) 
+    drop-shadow(1px 1px 3px rgb(17, 18, 17)) 
+    drop-shadow(1px 1px 3px rgb(0, 0, 0)) 
+    drop-shadow(1px 1px 3px black);
+
+  }
+  .chiefchef-name p{
+    font-size: 13px;
+    color:rgb(0, 0, 0);
+    margin-top: 0px;
+    margin: 0px;
+    font-family: monospace;
+    font-weight: bold;
+    text-decoration:  underline;
+  }
+  #spinner ion-icon[name="refresh-circle-outline"]{
+    animation: spinner 1s linear infinite;
+  }
+
+
+
+/*tutorial page--------------------------*/
+#chiefchef-tutorial{
+    width: 100%;
+    height: 100vh;
+    background: var(--default-dark-background-color);
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: relative;
+    display: none;
+}
+#chiefchef-tutorial #describer-hold {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    perspective: 1000px;
+    z-index: 100;
+    margin-top: 15px;
+}
+
+#chiefchef-tutorial #describer-hold > :nth-child(1) {
+    transform: rotateY(-20deg);
+    backface-visibility: hidden; 
+}
+
+#chiefchef-tutorial #describer-hold > :nth-child(3) {
+    transform: rotateY(20deg);
+    backface-visibility: hidden; 
+}
+
+#chiefchef-tutorial .tutorial-step {
+    min-width: 100px;
+    max-width: 250px;
+    height: 450px;
+    box-shadow: 
+        0px 0px 3px rgba(255, 255, 255, 0.5), 
+        inset 0px 2px 3px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 10px;
+    margin: auto 10px;
+    backface-visibility: hidden; /* Hide the back of the element */
+    z-index: 100;
+    cursor: pointer;
+}
+
+#chiefchef-tutorial .tutorial-step:hover{
+    box-shadow: 
+    0px 0px 3px rgba(2, 255, 82, 0.5), 
+    inset 0px 2px 3px rgba(0, 255, 119, 0.5);
+}
+
+#chiefchef-tutorial #tutorial-desc{
+    width: 80%;
+    margin: auto;
+    margin-top: auto;
+    margin-bottom: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: gray;
+    border-bottom: 3px solid black;
+    text-align: center;
+}
+#chiefchef-tutorial #tutorial-desc::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-image: url(../files/772683.jpeg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    opacity: 0.01; /* Adjust opacity here */
+    z-index: 0; /* Ensure the pseudo-element stays behind the content */
+  }
+#chiefchef-tutorial #next-tutorial{
+    width: 80%;
+    margin: 0 auto;
+    margin-top:auto ;
+    margin-bottom: 10%;
+    height: 40px;
+    border-radius: 20px;
+    font-weight: bolder;  
+    font-size: 16px;
+    cursor: pointer !important;
+    background-color: rgba(0, 255, 119, 0.5);
+    z-index: 100;
+}
+#chiefchef-tutorial #next-tutorial:hover{
+    background-color: forestgreen;
+}
+
+.active-tutorial{
+    height: 500px !important;
+    margin: auto;
+}
+
+/* login and signup--------------------------------*/
+#chiefchef-login{
+    width: 100%;
+    height: 100vh;
+    background: var(--default-dark-background-color);
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: relative;
+    z-index: 100;
+    perspective: 1000px;
+   display: none;
+}
+#chiefchef-login .chiefchef-name{
+    margin-top: 0;
+    margin-left: 10%;
+    margin-bottom: 4px;
+}
+
+
+#chiefchef-login img {
+    width: 90%;
+    margin: 20px auto;
+    background-color: inherit;
+    height: auto;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: height 7s ease-out, box-shadow 0.5s ease-in-out; /* Added box-shadow transition */
+    animation-delay: 0.5s;
+    z-index: 100;
+    position: relative; /* Added positioning for z-index to work */
+    margin-bottom: 5px;
+    box-shadow: 
+    0px 0px 3px rgba(2, 255, 82, 0.5), 
+    inset 0px 2px 3px rgba(0, 255, 119, 0.5);
+    transition: transform 0.9s ease;}
+
+#chiefchef-login img:hover {
+    max-height: 100%;
+    box-shadow: 
+    0px 0px 3px rgba(2, 255, 82, 0.5), 
+    inset 0px 2px 3px rgba(0, 255, 119, 0.5);
+    transform: rotateY(30deg);
+}
+
+#chiefchef-login #login-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+}
+#chiefchef-login #login-container #btn-login{
+    background: rgba(0, 255, 119, 0.5) !important; 
+    font-weight: bolder;
+    cursor: pointer;
+    min-height: 50px !important;
+    border-radius: 20px !important;
+}
+#chiefchef-login #login-container #btn-login:hover{
+    background: var(--third-color) !important;
+}
+#chiefchef-login #login-container #btn-register{
+    width: 90%;
+    margin: auto;
+    background: rgb(118, 119, 119) !important; 
+    font-weight: bolder;
+    cursor: pointer;
+    height: 50px !important;
+    border-radius: 20px !important;
+}
+#chiefchef-login #login-container #btn-register:hover{
+    background: rgb(169, 169, 169) !important; 
+
+}
+
+#chiefchef-login #login-container #btn-register,
+#chiefchef-login #login-container button,
+#chiefchef-login #login-container .inline input{
+    height: 40px;
+    border-radius: 10px;
+    padding: 0px 10px;
+    outline: none;
+    margin-bottom: 10px;
+    background-color: rgb(195, 195, 195) ;
+    color: black;
+   
+}
+#chiefchef-login #login-container .inline{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+}
+#chiefchef-login #login-container .inline input{
+    padding-left: 30px;
+    width: inherit;
+}
+#chiefchef-login #login-container .inline ion-icon{
+   margin-right: -24px;
+    margin-left: 4px;
+    font-size: 20px;
+    color: gray;
+    margin-bottom: 5px;
+}
+#chiefchef-login #remember-me{
+    display: flex;
+   align-items: center;
+   color: gray;
+   margin: 5px 0;
+  
+}
+#chiefchef-login #remember-me a{
+    margin-left: auto;
+}
+#chiefchef-login #login-container #login-form{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+}
+.line-with-text {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    margin: auto;
+}
+
+.line-with-text hr {
+    flex-grow: 1;
+    border: none;
+    border-top: 1px solid rgb(180, 180, 180);
+    margin: 0 10px;
+}
+
+.line-with-text span {
+    padding: 0 10px;
+    white-space: nowrap;
+    color: rgb(180, 180, 180);
+}
+#chiefchef-login .social-media-icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 90%;
+    margin: auto;
+    padding: 5px 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+#chiefchef-login .social-media-icons ion-icon[name="logo-facebook"] {
+    color: #ffffff; /* Facebook's official blue color */
+    font-size: 24px;
+    box-shadow: 0px 1px 3px ;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#chiefchef-login .social-media-icons ion-icon[name="logo-facebook"]:hover {
+    color: #4267B2; 
+    box-shadow: 0px 1px 3px ;
+}
+
+
+#chiefchef-login .social-media-icons ion-icon[name="logo-twitter"] {
+    color: #ffffff; /* Twitter's official blue color */
+    font-size: 24px;
+    box-shadow: 0px 1px 3px ;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#chiefchef-login .social-media-icons ion-icon[name="logo-twitter"]:hover{
+    color: #1DA1F2; /* Twitter's official blue color */
+    font-size: 24px;
+    box-shadow: 0px 1px 3px ;
+}
+
+
+#chiefchef-login .social-media-icons ion-icon[name="logo-instagram"] {
+    color: #ffffff; /* Instagram's official pink color */
+    font-size: 24px;
+    box-shadow: 0px 1px 3px ;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#chiefchef-login .social-media-icons ion-icon[name="logo-instagram"]:hover{
+    color: #E4405F; /* Instagram's official pink color */
+    font-size: 24px;
+    box-shadow: 0px 1px 3px ;
+}
+
+
+#chiefchef-login .social-media-icons ion-icon[name="logo-google"] {
+    color: #ffffff; /* Google's official red color */
+    font-size: 24px;
+    box-shadow: 0px 1px 3px ;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#chiefchef-login .social-media-icons ion-icon[name="logo-google"]:hover{
+    color: orange; /* Google's official red color */
+    box-shadow: 0px 1px 3px ;
+}
+    
+#chiefchef-login::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-image: url(../files/772683.jpeg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    opacity: 0.01; /* Adjust opacity here */
+    z-index: -1; /* Ensure the pseudo-element stays behind the content */
+  }
+
+/*Homepage-unique...................................................................................*/
+#chiefchef-homepage{
+    width: 100%;
+    height: 100vh;
+    background: var(--default-dark-background-color);
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: relative;
+    display:none;
+}
+/*header*/
+#chiefchef-homepage-header{
+    position: sticky !important;
+    top: 0%;
+    background-color: rgb(46, 45, 45) !important;
+    padding: 0px 10px;
+    z-index: 100;
+}
+#chiefchef-homepage #chiefchef-homepage-header-inn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#chiefchef-homepage #chiefchef-homepage-header-inn p{
+    color: rgb(159, 154, 154) !important;
+}
+#chiefchef-homepage #chiefchef-homepage-header-inn #notifications-btn{
+    border: transparent !important;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-weight: bold !important;
+    position: relative;
+    background-color: rgb(101, 102, 101);
+    margin-top: 10px;
+    cursor: pointer;
+    box-shadow: 0px 1px 3px red;
+}
+#chiefchef-homepage #chiefchef-homepage-header-inn #notifications-btn:hover{
+    color: rgb(11, 234, 226) ;
+    background-color: rgb(66, 66, 66);
+    filter: drop-shadow(0px 2px 3px red);
+}
+#chiefchef-homepage #chiefchef-homepage-header-inn #notifications-btn ion-icon{
+    font-size: 20px;
+    color: rgb(0, 255, 21);
+}
+
+#chiefchef-homepage #chiefchef-homepage-header-inn #notifications-btn .notification-count{
+    position: absolute;
+    top: -8%;
+    right: -5%;
+    color: red !important;
+    width: 13px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #606060d9;
+}
+#chiefchef-homepage #chiefchef-homepage-search{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5px;
+    align-items: center;
+}
+#chiefchef-homepage #chiefchef-homepage-search input{
+    width: 100%;
+    padding-left: 40px !important;
+    height: 25px;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #555;
+    color: #a5a2a2;
+    border: none;
+
+}
+#chiefchef-homepage #chiefchef-homepage-search ion-icon{
+    margin-right: -30px;
+    font-size: 12px;
+    font-weight: bolder;
+    background-color: rgb(0, 71, 0);
+    height: 25px;
+    border-radius: 20px 0 0 20px;
+    width: 30px;
+    cursor: pointer;
+    color: rgb(183, 183, 183);
+}
+#chiefchef-homepage #chiefchef-homepage-search ion-icon:hover{
+    color:aqua ;
+    background-color: green;
+}
+/*home*/
+#chiefchef-homepage #popular-category{
+    background-color: transparent ;
+    
+}
+#chiefchef-homepage #popular-category h2{
+    margin-left: 10px;
+}
+#chiefchef-homepage #popular-category #popular-meal{
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+
+}
+#chiefchef-homepage #popular-category #popular-meal .mealnames{
+    margin: 5px;
+    font-size: 18px;
+    background-color: #55555573;
+    border-radius: 12px;
+    padding: 0px 5px;
+}
+#chiefchef-homepage #popular-meals-cards-hold{
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    width: 100%;
+    flex-wrap: wrap;
+    height: 230px;
+    min-height: 230px;
+}
+#chiefchef-homepage #popular-meals-cards-hold .user-inter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgba(100, 99, 99, 0.535);
+    border-radius: 10px;
+    padding: 2px 5px;
+    margin-top: 3px;
+}
+#chiefchef-homepage #popular-meals-cards-hold .popular-meal-card{
+    width: 150px;
+    height: 200px;
+    overflow: hidden;
+    background-color: #888;
+    margin: 10px;
+    position: relative;
+    border-radius: 10px;
+}
+#chiefchef-homepage #popular-meals-cards-hold .popular-meal-card img{
+    width: 100%;
+    height: 78%;
+    object-fit: cover;
+}
+#chiefchef-homepage #popular-meals-cards-hold .popular-meal-card .like-meal{
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    font-size: 36px !important;
+    background-color:rgba(189, 188, 188, 0.705) ;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border: none ;
+    outline: none;
+    margin: 2px;
+}
+#chiefchef-homepage #trending-recipes{
+    width: inherit;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    justify-content: space-around;
+}
+
+#chiefchef-homepage .trending-recipe-card{
+    width: 100%;
+    background-color: gray;
+    height: auto;
+    overflow: hidden;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+#chiefchef-homepage .trending-recipe-card >img{
+    width: 100%;
+    height: 70% !important;
+    object-fit: cover;
+}
+#chiefchef-homepage #trending-recipes .recipe-info{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 10px;
+}
+#chiefchef-homepage #trending-recipes .recipe-inter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 5px;
+    background-color:  rgba(111, 111, 111, 0.404);
+    padding: 2px 10px;
+    border-radius: 0px 0px 10px 10px;
+    margin-top: 5px;
+}
+#chiefchef-homepage #trending-recipes .trending-recipe-card .recipe-info h3{
+    margin: 2px;
+}
+#chiefchef-homepage #trending-recipes .trending-recipe-card .recipe-info p{
+    margin: 1px;
+    background-color: rgba(111, 111, 111, 0.404);
+    padding: 5px 10px;
+    border-radius: 10px 10px 0px 0px;
+}
+#chiefchef-homepage #trending-recipes .trending-recipe-card .like-meal{
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    font-size: 36px !important;
+    background-color:rgba(189, 188, 188, 0.705) ;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border: none ;
+    outline: none;
+    margin: 5px;
+}
+#chiefchef-homepage #trending-recipes .recipe-inter .recipe-poster span{
+    color: rgb(47, 46, 46);
+    cursor: pointer;
+    user-select: none;
+}
+#chiefchef-homepage #trending-recipes .recipe-inter .recipe-poster span:hover{
+    text-decoration: underline;
+    color: #544848;
+}
+#chiefchef-homepage #trending-recipes .recipe-inter .meal-rate{
+    color: rgb(47, 46, 46);
+    cursor: pointer;
+}
+#chiefchef-homepage #popular-meals-cards-hold .popular-meal-card .user-inter .meal-cook-time,
+#chiefchef-homepage #trending-recipes .recipe-inter .meal-cook-time{
+    color: rgb(47, 46, 46) !important;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    user-select: none;
+}
+/*navigation*/
+ #chiefchef-homepage-navigation{
+    position: sticky;
+    bottom: 0%;
+    background-color: rgb(46, 45, 45) !important;
+    width: 100%;
+}
+ #chiefchef-homepage-navigation #chiefchef-homepage-navigation-inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+    position: relative;
+    font-size: 20px;
+    padding: 2px 10px;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+ #chiefchef-homepage-navigation #btn-add-recipe{
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    z-index: 0;
+    border-radius: 50%;
+    background: var(--default-dark-background-color);
+    background-clip: inherit;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+#chiefchef-homepage-navigation .navigation-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    cursor: pointer;
+    user-select: none;
+}
+#chiefchef-homepage-navigation .navigation-item >ion-icon{
+    width: 100%;
+
+}
+ .nav-active{
+    padding: 4px;
+    color: var(--third-color);
+    box-sizing: border-box;
+}
+
+/* chiefchef fav-unique */
+ #chiefchef-fav{
+    width: 100%;
+    height: 100vh;
+    background: var(--default-dark-background-color);
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: relative;
+    display:none;
+}
+
+#chiefchef-fav #chiefchef-fav-header h2{
+    margin-left: 10px;
+    color: #1DA1F2 !important;
+}
+#chiefchef-fav #chiefchef-fav-holder{
+    display: flex;
+    flex-direction: column;
+    overflow-x: auto;
+}
+#chiefchef-fav #chiefchef-fav-holder .mealnames{
+    margin: 5px;
+    font-size: 18px;
+    background-color: #55555573;
+    border-radius: 12px;
+    padding: 0px 5px;
+}
+
+#chiefchef-fav #chiefchef-fav-holder .user-inter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgba(100, 99, 99, 0.535);
+    border-radius: 10px;
+    padding: 2px 5px;
+    margin-top: 3px;
+}
+#chiefchef-fav #chiefchef-fav-holder .popular-meal-card{
+    width: inherit !important;
+    height: auto !important;
+    max-height: 500px !important;
+    min-height: 250px !important;
+    overflow: hidden;
+    background-color: #888;
+    margin: 10px;
+    position: relative;
+    border-radius: 10px;
+}
+#chiefchef-fav #chiefchef-fav-holder .popular-meal-card img{
+    width: 100%;
+    height: 78%;
+    object-fit: cover;
+}
+#chiefchef-fav #chiefchef-fav-holder .popular-meal-card .like-meal{
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    font-size: 36px !important;
+    background-color:rgba(189, 188, 188, 0.705) ;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border: none ;
+    outline: none;
+    margin: 2px;
+}
+
+/* media queries--------------------------------*/
+@media screen and (min-width: 700px) {
+    #chiefchef-splash > img {
+      width: 350px;
+    }
+    #chiefchef-tutorial #tutorial-desc {
+        margin-bottom: 20px;
+       }
+       #chiefchef-tutorial .tutorial-step {
+           width: 250px;   
+            }
+    #chiefchef-tutorial #next-tutorial {
+        width: 600px;
+    }
+    #chiefchef-login {
+        width: 700px;
+        margin: auto;
+    }
+    #chiefchef-login #login-container{
+        width: 700px;
+        
+    }
+    #chiefchef-homepage #chiefchef-homepage-search{
+        width: 500px !important;
+        margin: auto;
+        align-items: center;
+        margin-bottom: 3px;
+    }
+    #chiefchef-homepage #trending-recipes {
+        display: flex;
+        flex-wrap: wrap; /* Allows cards to wrap on smaller screens */
+        justify-content: space-around; /* Add space between cards */
+    }
+    
+    #chiefchef-homepage .trending-recipe-card {
+        flex: 1 1 calc(33.33% ); /* 3 cards per row on larger screens */
+        margin: 10px;
+        max-width: 300px;
+    }
+    #chiefchef-fav #chiefchef-fav-holder,
+    #chiefchef-profile #user-receipts{
+        display: flex;
+        flex-wrap: wrap; /* Allows cards to wrap on smaller screens */
+        justify-content: space-around; /* Add space between cards */
+    }
+    
+    #chiefchef-fav #chiefchef-fav-holder .popular-meal-card,
+    #chiefchef-profile #user-receipts .popular-meal-card{
+        flex: 1 1 calc(33.33% ); /* 3 cards per row on larger screens */
+        margin: 10px;
+        max-width: 400px;
+        min-width: 300px !important;
+        height: fit-content;
+    }
+    #chiefchef-profile #chiefchef-profile-info{
+        max-width: 900px;
+        min-width: 700px;
+        margin: auto;
+    }
+    #chiefchef-profile #aboutme-content{
+       
+        margin: auto;
+    }
+}
+#chiefchef-reel{
+    width: 100%;
+    height: 100vh;
+    background: var(--default-dark-background-color);
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: relative;
+    display:none;
+}
+/* =================================================================*/
+#chiefchef-profile{
+    width: 100%;
+    height: 100vh;
+    background: var(--default-dark-background-color);
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: relative;
+    display:none;
+}
+
+#chiefchef-profile #chiefchef-profile-header{
+    background-color:transparent ;  
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+}
+#chiefchef-profile #chiefchef-profile-header button {
+    margin-left: auto;
+    position: absolute;
+    right: 0.7%;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    outline: transparent;
+    border: transparent;
+    font-size: 20px;
+    border-radius: 5px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+}
+#chiefchef-profile #chiefchef-profile-header button:hover {
+    background: rgba(128, 128, 128, 0.411);
+    color: white;
+}
+#chiefchef-profile #chiefchef-profile-info{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+#chiefchef-profile #chiefchef-profile-info .user-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#chiefchef-profile #chiefchef-profile-info .user-details >img{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 10px;
+}
+#chiefchef-profile #chiefchef-profile-info .user-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#chiefchef-profile #chiefchef-profile-info .user-info p{
+    color: #b6b2b2;
+}
+#chiefchef-profile #chiefchef-profile-info .user-info #recipe-no{
+    color: #909090;
+    padding: 2px 6px;
+    border-radius: 5px;
+}
+#chiefchef-profile #chiefchef-profile-info .user-info #recipe-no:hover{
+    background-color: #555555;
+    cursor: pointer;
+}
+#chiefchef-profile #chiefchef-profile-info  h3,
+#chiefchef-profile #chiefchef-profile-info p{
+    margin: 1px;
+    padding: 0;
+    user-select: none;
+}
+#chiefchef-profile #chiefchef-profile-info .user-details #username{
+    font-size: 18px;
+    color: rgb(28, 29, 29);
+    cursor: pointer;
+    padding: 2px 5px;
+    border-radius: 5px;
+    margin: 2px;
+}
+#chiefchef-profile #chiefchef-profile-info .user-details #username:hover{
+    background-color:  #555555;
+}
+#chiefchef-profile #chiefchef-profile-info .user-details #userTitle{
+    font-size: 11px;
+    color: #909090;
+    cursor: pointer;
+    border-bottom: 1px solid transparent;
+
+}
+#chiefchef-profile #chiefchef-profile-info .user-details #userTitle:hover{
+    color: #b8b6b6;
+    border-bottom: 1px solid ;
+}
+
+
+#chiefchef-profile #user-receipts{
+    width: 100%;
+    height: 100vh;
+    background: var(--default-dark-background-color);
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: relative;
+    display:non;
+}
+
+#chiefchef-profile #recept-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-bottom: 2px solid ;
+    position: sticky;
+    top: 2%;
+    z-index: 80;
+    background-color:inherit;
+}
+#chiefchef-profile #user-receipts .user-inter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgba(100, 99, 99, 0.535);
+    border-radius: 10px;
+    padding: 2px 5px;
+    margin-top: 3px;
+}
+#chiefchef-profile #user-receipts .popular-meal-card{
+    width: inherit !important;
+    height: auto !important;
+    max-height: 500px !important;
+    min-height: 250px !important;
+    overflow: hidden;
+    background-color: #888;
+    margin: 10px;
+    position: relative;
+    border-radius: 10px;
+}
+#chiefchef-profile #user-receipts .popular-meal-card img{
+    width: 100%;
+    height: 78%;
+    object-fit: cover;
+}
+#chiefchef-profile #user-receipts .popular-meal-card .like-meal{
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    font-size: 36px !important;
+    background-color:rgba(189, 188, 188, 0.705) ;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border: none ;
+    outline: none;
+    margin: 2px;
+}
+#chiefchef-profile #user-desc-about{
+    padding: 3px 10px;
+   color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#chiefchef-profile #user-desc-about p{
+    margin: 5px 0;
+}
+#chiefchef-profile #aboutme-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 1px;
+    border-radius: 10px;
+    background-color: rgba(189, 188, 188, 0.064);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#chiefchef-profile #userprofile-more{
+    font-size: 18px;
+    color: rgb(10, 159, 2);
+    text-decoration: underline;
+    
+}
+/* add category*/
+#chiefchef-add-recipe{
+    width: 100%;
+    height: 100vh;
+    background: var(--default-dark-background-color);
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: relative;
+    display:none;
+    max-width: 700px;
+    margin: auto;
+}
+#chiefchef-add-recipe #top-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: sticky;
+    top: 0%;
+    z-index: 80;
+    background-color:rgb(48, 48, 48);
+    min-height: 30px !important;
+}
+#chiefchef-add-recipe #top-bar button {
+    background-color: inherit;
+    outline: none;
+    padding: 4px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    border: transparent ;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+#chiefchef-add-recipe #top-bar button:hover {
+    background-color: #5555559c;
+}
+
+#chiefchef-add-recipe #top-bar #done-ingridient {
+    color: forestgreen ;
+    margin-right: 5px;
+}
+#chiefchef-add-recipe #in-container{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    width: inh;
+}
+#chiefchef-add-recipe #add-recipe-image-vid{
+    
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border: 4px dotted gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    min-height: 200px;
+}
+#chiefchef-add-recipe #add-recipe-image-vid #empty-file-icon{
+    width: 80px;
+    margin-top: 10px;
+}
+#chiefchef-add-recipe #add-recipe-image-vid video,
+#chiefchef-add-recipe #add-recipe-image-vid img{
+    width: inherit;
+}
+#chiefchef-add-recipe #add-recipe-name,
+ #chiefchef-add-recipe #add-recipe-desc,
+ #chiefchef-add-recipe #add-recipe-ingredients,
+ #chiefchef-add-recipe #add-recipe-cook-time{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+
+}
+
+#chiefchef-add-recipe #add-recipe-name input{
+    border-radius: 10px;
+    height: 30px;
+    padding: 0px 10px;
+    box-sizing: border-box;
+    outline: 1px solid rgb(177, 171, 171);
+    border: none;
+    background-color: rgb(205, 205, 205);
+    color: white;
+}
+#chiefchef-add-recipe #add-recipe-desc textarea{
+    border-radius: 20px;
+    height: 100px;
+    padding: 10px;
+    resize: none;
+    box-sizing: border-box;
+    outline: 1px solid rgb(21, 19, 19);
+    background-color: rgb(205, 205, 205);
+    color: rgb(86, 82, 82);
+    overflow: hidden;
+}
+#chiefchef-add-recipe #add-recipe-ingredients input{
+    border-radius: 5px 10px 10px 5px;
+    height: 30px;
+    padding: 10px;
+    resize: none;
+    box-sizing: border-box;
+    outline: 1px solid rgb(21, 19, 19);
+    background-color:  rgb(205, 205, 205);
+   
+    width: 100%;
+}
+#chiefchef-add-recipe #add-recipe-ingredients button {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: forestgreen;
+    color: white;
+    font-weight: bolder;
+    border-radius: 10px;
+    height: 30px;
+}#ingridients-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 10px;
+    background-color: #544848;
+    min-height: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+#chiefchef-add-recipe #inlinet{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 5px;
+}
+#chiefchef-add-recipe #inlinet img{
+    height: 30px;
+    padding: 2px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    cursor: pointer;
+    min-width: 20px;
+    min-height: 20px;
+}
+#chiefchef-add-recipe #inlinet img:hover{
+    filter: drop-shadow(1px 1px 3px forestgreen);
+}
+
+#chiefchef-add-recipe #in-container label{
+    color: rgb(176, 176, 176);
+    font-weight: bold;
+    margin-right: 10px;
+}
+#chiefchef-add-recipe #more-on-ingredient{
+    background-color: #232323;
+    width: 300px;
+    display: none;
+    flex-direction: column;
+    border-radius: 3px;
+    position: absolute;
+    bottom: 50%;
+    margin-bottom: 40px;
+    left: 1%;
+    border: 1px solid  gray;
+}
+#chiefchef-add-recipe #more-on-ingredient label{
+    color: rgb(185, 185, 185);
+    margin-top: 8px;
+}
+#chiefchef-add-recipe #more-on-ingredient input{
+    padding: 2px 3px;
+    box-sizing: border-box;
+    background-color: darkgray;border: none;
+    outline: none;
+    border-radius: 3px;
+    width: 100%;
+}
+#chiefchef-add-recipe #more-on-ingredient textarea {
+    padding: 2px 3px;
+    box-sizing: border-box;
+    background-color: darkgray;border: none;
+    outline: none;
+    border-radius: 3px;
+    resize: none;
+    height: 40px;
+    width: 100%;
+}
+#chiefchef-add-recipe #more-on-ingredient button{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: forestgreen;
+    color: white;
+    font-weight: bolder;
+    border-radius: 10px;
+    height: 30px;
+    width: 100%;
+}
+#chiefchef-add-recipe .ingredients-l p{
+    margin: 0;
+}
+#chiefchef-add-recipe .ingredients-l{
+    width: fit-content;
+    min-width: 50px;
+    background-color: #555;
+    margin: 3px 0;
+    padding: 5px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+#chiefchef-add-recipe .ingredients-l .desc{
+    color: rgb(186, 186, 186);
+    overflow-wrap: break-word;
+    margin-top: 5px;
+}
+#crazycont{
+    position: relative;
+}
+
+/*------------reels control---------------------*/
+
+#reels-hold-container{
+    max-width: 700px;
+    margin: auto;
+    height: 100%;
+    width: 100%;
+}
+#chiefchef-reel .recipe-reels{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #171515;
+    border-radius: 5px;
+    margin: 2px 0;
+    position: relative;
+}
+#chiefchef-reel .recipe-reels video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    
+}
+.video-controls {
+    margin-top: 5px;
+    position: absolute;
+    bottom: 2%; /* Stay near the bottom */
+    left: 50%;  /* Start positioning from the middle of the container */
+    transform: translate(-50%, 0); /* Adjust to center horizontally */
+    color: rgb(199, 194, 194);
+}
+
+.timer, .status {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 14px;
+}
+  /*----------------------------------------------------------------*/
+  /*key frames*/
+  @keyframes spinner{
+    0%{transform:rotate(0deg);}
+    100%{transform:rotate(360deg);}
+  }
+
+
+/* The entire scrollbar */
+::-webkit-scrollbar {
+    width: 5px; /* Width of the scrollbar */
+    height: 3px; /* Height for horizontal scrollbar */
+}
+
+/* The track (background) */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Light background for the track */
+    border-radius: 10px;  /* Rounded track edges */
+}
+
+/* The handle (thumb) */
+::-webkit-scrollbar-thumb {
+    background: #888; /* Darker background for the thumb */
+    border-radius: 10px; /* Rounded thumb edges */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Darker color when hovered */
+}

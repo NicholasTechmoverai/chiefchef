@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>icon0customize</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#905CF4" offset="0%"></stop>
+            <stop stop-color="#6758F3" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="icon0customize" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M36,6.82842712 L23.4142136,19.4142136 C22.633165,20.1952621 21.366835,20.1952621 20.5857864,19.4142136 C19.8047379,18.633165 19.8047379,17.366835 20.5857864,16.5857864 L33.1715729,4 L27,4 C25.8954305,4 25,3.1045695 25,2 C25,0.8954305 25.8954305,0 27,0 L35,0 C37.7614237,-6.66133815e-16 40,2.23857625 40,5 L40,13 C40,14.1045695 39.1045695,15 38,15 C36.8954305,15 36,14.1045695 36,13 L36,6.82842712 Z M29,23.5 C29,22.3954305 29.8954305,21.5 31,21.5 C32.1045695,21.5 33,22.3954305 33,23.5 L33,35 C33,37.7614237 30.7614237,40 28,40 L5,40 C2.23857625,40 0,37.7614237 0,35 L0,12 C-3.70074342e-16,9.23857625 2.23857625,7 5,7 L16.5,7 C17.6045695,7 18.5,7.8954305 18.5,9 C18.5,10.1045695 17.6045695,11 16.5,11 L5,11 C4.44771525,11 4,11.4477153 4,12 L4,35 C4,35.5522847 4.44771525,36 5,36 L28,36 C28.5522847,36 29,35.5522847 29,35 L29,23.5 Z" id="Combined-Shape" fill="url(#linearGradient-1)" fill-rule="nonzero"></path>
+    </g>
+</svg>
